@@ -40,7 +40,8 @@ const App: React.FC = () => {
             <Route path="/forgot-password" element={<ForgotPassword />} />
             <Route path="/reset-password" element={<ResetPassword />} />
             <Route path="/verify-email" element={<VerifyEmail />} />
-            <Route path="/payment-method" element={<PaymentMethod />} />
+            // No seu App.tsx, adicione a nova rota:
+<Route path="/payment" element={<PaymentMethod />} />
            
             <Route path="/edit-product/:id" element={<EditProduct />} /> 
             <Route path="/edit-product" element={<EditProduct />} /> 

@@ -97,15 +97,30 @@ const Checkout: React.FC = () => {
       navigate('/listing');
       return;
     }
-
+  
     if (!user) return;
-
+  
     setIsLoading(true);
-
+  
+    
+    const response = await fetch(`http://localhost:3001/orders?userId=${user.id}`);
+    const userOrders = await response.json();
+    const isFirstOrder = userOrders.length === 0;
+  
+    
+    let finalTotal = total;
+    let discountApplied = 0;
+    
+    if (isFirstOrder) {
+      discountApplied = subtotal * 0.25;
+      finalTotal = total - discountApplied;
+    }
+  
     const order = {
       userId: user.id,
       items: cartItems,
-      total,
+      total: finalTotal,
+      originalTotal: total,
       date: new Date().toISOString(),
       shippingAddress: {
         zipCode,
@@ -114,20 +129,22 @@ const Checkout: React.FC = () => {
         state,
         country,
       },
+      isFirstOrder
     };
-
+  
     try {
-      const response = await fetch('http://localhost:3001/orders', {
+      const saveResponse = await fetch('http://localhost:3001/orders', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(order),
       });
-
-      if (response.ok) {
+  
+      if (saveResponse.ok) {
         dispatch(clearCart());
-        navigate('/afterpayment');
+        
+        navigate('/payment', { state: { total: finalTotal } });
       } else {
         console.error('Falha ao salvar pedido');
       }

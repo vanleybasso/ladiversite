@@ -21,7 +21,9 @@ const PageTitle = () => {
       "/reset-password": "Reset Password",
       "/verify-email": "Verify Email",
       "/edit-product/:id": "Edit Product", 
-      "/edit-product": "Add Product", 
+      "/edit-product": "Add Product",
+      "/payment": "Payment"
+
     };
 
     const currentRoute = Object.keys(routeTitles).find((route) => {

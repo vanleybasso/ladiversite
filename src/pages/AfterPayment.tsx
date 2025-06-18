@@ -79,7 +79,7 @@ const AfterPayment: React.FC = () => {
           onClick={handleGoToAccount}
           className={`bg-bordeaux text-amber-50 py-2 px-6 rounded-md hover:bg-bordeaux-dark cursor-pointer flex items-center gap-2 hover:scale-105 transition-transform duration-200 border border-amber-200`}
         >
-          Ir para minha conta
+          Ir para meus pedidos
           <img
             src="/src/assets/Arrow-Right.png" 
             alt="Ícone"

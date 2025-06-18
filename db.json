@@ -1651,6 +1651,400 @@
         "state": "RS",
         "country": "Brasil"
       }
+    },
+    {
+      "id": "bae2",
+      "userId": "user_2yeskFNanfjuzgb4HzJVUzBQQbl",
+      "items": [
+        {
+          "id": "1",
+          "title": "Cerveja IPA Premium",
+          "price": 25.9,
+          "imageUrl": "https://www.piramidesdistribuidora.com.br/images/original/3328-heineken-long-neck-330ml-24un.20250604092403.png",
+          "quantity": 2,
+          "category": "Cerveja"
+        }
+      ],
+      "total": 61.8,
+      "date": "2025-06-18T02:10:06.761Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua princesa isabel 279",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "8404",
+      "userId": "user_2yeskFNanfjuzgb4HzJVUzBQQbl",
+      "items": [
+        {
+          "id": "1",
+          "title": "Cerveja IPA Premium",
+          "price": 25.9,
+          "imageUrl": "https://www.piramidesdistribuidora.com.br/images/original/3328-heineken-long-neck-330ml-24un.20250604092403.png",
+          "quantity": 9,
+          "category": "Cerveja"
+        }
+      ],
+      "total": 243.1,
+      "date": "2025-06-18T02:10:57.538Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "6594",
+      "userId": "user_2yeskFNanfjuzgb4HzJVUzBQQbl",
+      "items": [
+        {
+          "id": "1",
+          "title": "Cerveja IPA Premium",
+          "price": 25.9,
+          "imageUrl": "https://www.piramidesdistribuidora.com.br/images/original/3328-heineken-long-neck-330ml-24un.20250604092403.png",
+          "quantity": 2,
+          "category": "Cerveja"
+        }
+      ],
+      "total": 61.8,
+      "date": "2025-06-18T02:13:22.738Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "b900",
+      "userId": "user_2yeskFNanfjuzgb4HzJVUzBQQbl",
+      "items": [
+        {
+          "id": "1",
+          "title": "Cerveja IPA Premium",
+          "price": 25.9,
+          "imageUrl": "https://www.piramidesdistribuidora.com.br/images/original/3328-heineken-long-neck-330ml-24un.20250604092403.png",
+          "quantity": 4,
+          "category": "Cerveja"
+        }
+      ],
+      "total": 113.6,
+      "originalTotal": 113.6,
+      "date": "2025-06-18T02:17:29.879Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      },
+      "isFirstOrder": false
+    },
+    {
+      "id": "6db9",
+      "userId": "user_2yeskFNanfjuzgb4HzJVUzBQQbl",
+      "items": [
+        {
+          "id": "1",
+          "title": "Cerveja IPA Premium",
+          "price": 25.9,
+          "imageUrl": "https://www.piramidesdistribuidora.com.br/images/original/3328-heineken-long-neck-330ml-24un.20250604092403.png",
+          "quantity": 3,
+          "category": "Cerveja"
+        }
+      ],
+      "total": 87.69999999999999,
+      "originalTotal": 87.69999999999999,
+      "date": "2025-06-18T02:18:43.010Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      },
+      "isFirstOrder": false
+    },
+    {
+      "id": "0fb6",
+      "userId": "user_2yeskFNanfjuzgb4HzJVUzBQQbl",
+      "items": [
+        {
+          "id": "1",
+          "title": "Cerveja IPA Premium",
+          "price": 25.9,
+          "imageUrl": "https://www.piramidesdistribuidora.com.br/images/original/3328-heineken-long-neck-330ml-24un.20250604092403.png",
+          "quantity": 2,
+          "category": "Cerveja"
+        }
+      ],
+      "total": 61.8,
+      "originalTotal": 61.8,
+      "date": "2025-06-18T02:38:03.573Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      },
+      "isFirstOrder": false
+    },
+    {
+      "id": "6e9d",
+      "userId": "user_2yeskFNanfjuzgb4HzJVUzBQQbl",
+      "items": [
+        {
+          "id": "3",
+          "title": "Whiskey Single Malt",
+          "price": 299.9,
+          "imageUrl": "/src/assets/whiskey1.png",
+          "quantity": 6,
+          "category": "Whiskey"
+        }
+      ],
+      "total": 1799.3999999999999,
+      "originalTotal": 1799.3999999999999,
+      "date": "2025-06-18T02:39:02.623Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      },
+      "isFirstOrder": false
+    },
+    {
+      "id": "3d36",
+      "userId": "user_2yeskFNanfjuzgb4HzJVUzBQQbl",
+      "items": [
+        {
+          "id": "3",
+          "title": "Whiskey Single Malt",
+          "price": 299.9,
+          "imageUrl": "/src/assets/whiskey1.png",
+          "quantity": 3,
+          "category": "Whiskey"
+        }
+      ],
+      "total": 899.6999999999999,
+      "originalTotal": 899.6999999999999,
+      "date": "2025-06-18T02:39:40.964Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      },
+      "isFirstOrder": false
+    },
+    {
+      "id": "475a",
+      "userId": "user_2yeskFNanfjuzgb4HzJVUzBQQbl",
+      "items": [
+        {
+          "id": "8",
+          "title": "Cerveja Pilsen Premium",
+          "price": 19.9,
+          "imageUrl": "/src/assets/cerveja2.png",
+          "quantity": 2,
+          "category": "Cerveja"
+        }
+      ],
+      "total": 49.8,
+      "originalTotal": 49.8,
+      "date": "2025-06-18T02:40:42.699Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      },
+      "isFirstOrder": false
+    },
+    {
+      "id": "a12c",
+      "userId": "user_2yeskFNanfjuzgb4HzJVUzBQQbl",
+      "items": [
+        {
+          "id": "1",
+          "title": "Cerveja IPA Premium",
+          "price": 25.9,
+          "imageUrl": "https://www.piramidesdistribuidora.com.br/images/original/3328-heineken-long-neck-330ml-24un.20250604092403.png",
+          "quantity": 1,
+          "category": "Cerveja"
+        }
+      ],
+      "total": 35.9,
+      "originalTotal": 35.9,
+      "date": "2025-06-18T02:41:29.433Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      },
+      "isFirstOrder": false
+    },
+    {
+      "id": "ce9a",
+      "userId": "user_2yeskFNanfjuzgb4HzJVUzBQQbl",
+      "items": [
+        {
+          "id": "1",
+          "title": "Cerveja IPA Premium",
+          "price": 25.9,
+          "imageUrl": "https://www.piramidesdistribuidora.com.br/images/original/3328-heineken-long-neck-330ml-24un.20250604092403.png",
+          "quantity": 2,
+          "category": "Cerveja"
+        }
+      ],
+      "total": 61.8,
+      "originalTotal": 61.8,
+      "date": "2025-06-18T02:42:21.046Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      },
+      "isFirstOrder": false
+    },
+    {
+      "id": "ac29",
+      "userId": "user_2yeskFNanfjuzgb4HzJVUzBQQbl",
+      "items": [
+        {
+          "id": "1",
+          "title": "Cerveja IPA Premium",
+          "price": 25.9,
+          "imageUrl": "https://www.piramidesdistribuidora.com.br/images/original/3328-heineken-long-neck-330ml-24un.20250604092403.png",
+          "quantity": 1,
+          "category": "Cerveja"
+        }
+      ],
+      "total": 35.9,
+      "originalTotal": 35.9,
+      "date": "2025-06-18T02:48:46.484Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      },
+      "isFirstOrder": false
+    },
+    {
+      "id": "7264",
+      "userId": "user_2yeskFNanfjuzgb4HzJVUzBQQbl",
+      "items": [
+        {
+          "id": "1",
+          "title": "Cerveja IPA Premium",
+          "price": 25.9,
+          "imageUrl": "https://www.piramidesdistribuidora.com.br/images/original/3328-heineken-long-neck-330ml-24un.20250604092403.png",
+          "quantity": 1,
+          "category": "Cerveja"
+        }
+      ],
+      "total": 35.9,
+      "originalTotal": 35.9,
+      "date": "2025-06-18T02:53:51.172Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      },
+      "isFirstOrder": false
+    },
+    {
+      "id": "623d",
+      "userId": "user_2yeskFNanfjuzgb4HzJVUzBQQbl",
+      "items": [
+        {
+          "id": "1",
+          "title": "Cerveja IPA Premium",
+          "price": 25.9,
+          "imageUrl": "https://www.piramidesdistribuidora.com.br/images/original/3328-heineken-long-neck-330ml-24un.20250604092403.png",
+          "quantity": 1,
+          "category": "Cerveja"
+        }
+      ],
+      "total": 35.9,
+      "originalTotal": 35.9,
+      "date": "2025-06-18T03:15:09.101Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      },
+      "isFirstOrder": false
+    },
+    {
+      "id": "0ae3",
+      "userId": "user_2yeskFNanfjuzgb4HzJVUzBQQbl",
+      "items": [
+        {
+          "id": "1",
+          "title": "Cerveja IPA Premium",
+          "price": 25.9,
+          "imageUrl": "https://www.piramidesdistribuidora.com.br/images/original/3328-heineken-long-neck-330ml-24un.20250604092403.png",
+          "quantity": 4,
+          "category": "Cerveja"
+        }
+      ],
+      "total": 113.6,
+      "originalTotal": 113.6,
+      "date": "2025-06-18T03:15:44.289Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      },
+      "isFirstOrder": false
+    },
+    {
+      "id": "0889",
+      "userId": "user_2yeskFNanfjuzgb4HzJVUzBQQbl",
+      "items": [
+        {
+          "id": "1",
+          "title": "Cerveja IPA Premium",
+          "price": 25.9,
+          "imageUrl": "https://www.piramidesdistribuidora.com.br/images/original/3328-heineken-long-neck-330ml-24un.20250604092403.png",
+          "quantity": 3,
+          "category": "Cerveja"
+        }
+      ],
+      "total": 87.69999999999999,
+      "originalTotal": 87.69999999999999,
+      "date": "2025-06-18T03:27:03.375Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      },
+      "isFirstOrder": false
     }
   ],
   "subscribers": [
