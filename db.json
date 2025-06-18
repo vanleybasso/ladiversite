@@ -3,10 +3,10 @@
     {
       "id": "1",
       "imageUrl": "https://www.piramidesdistribuidora.com.br/images/original/3328-heineken-long-neck-330ml-24un.20250604092403.png",
-      "altText": "Cerveja Artesanal IPA",
-      "title": "Cerveja IPA Premium",
-      "price": "25.90",
-      "status": "IN STOCK",
+      "altText": "Cerveja Artesanal IPA adasdsd",
+      "title": "Cerveja IPA Premiu",
+      "price": "1500",
+      "status": "NO STOCK",
       "rating": 4.7,
       "reviewsCount": 128,
       "description": "Cerveja artesanal tipo IPA com forte aroma de lúpulo",
@@ -14,66 +14,6 @@
         "/src/assets/cerveja1.png"
       ],
       "category": "Cerveja"
-    },
-    {
-      "id": "2",
-      "imageUrl": "/src/assets/vinho1.png",
-      "altText": "Vinho Tinto Reserva",
-      "title": "Vinho Tinto Cabernet",
-      "price": "89.90",
-      "status": "IN STOCK",
-      "rating": 4.8,
-      "reviewsCount": 215,
-      "description": "Vinho tinto reserva com notas de frutas vermelhas",
-      "images": [
-        "/src/assets/vinho1.png"
-      ],
-      "category": "Vinho"
-    },
-    {
-      "id": "3",
-      "imageUrl": "/src/assets/whiskey1.png",
-      "altText": "Whiskey Escocês 12 anos",
-      "title": "Whiskey Single Malt",
-      "price": "299.90",
-      "status": "IN STOCK",
-      "rating": 4.9,
-      "reviewsCount": 178,
-      "description": "Whiskey escocês envelhecido 12 anos em barris de carvalho",
-      "images": [
-        "/src/assets/whiskey1.png"
-      ],
-      "category": "Whiskey"
-    },
-    {
-      "id": "4",
-      "imageUrl": "/src/assets/vodka1.png",
-      "altText": "Vodka Premium",
-      "title": "Vodka Ultra Premium",
-      "price": "149.90",
-      "status": "IN STOCK",
-      "rating": 4.6,
-      "reviewsCount": 92,
-      "description": "Vodka destilada múltiplas vezes para pureza excepcional",
-      "images": [
-        "/src/assets/vodka1.png"
-      ],
-      "category": "Vodka"
-    },
-    {
-      "id": "5",
-      "imageUrl": "/src/assets/gin1.png",
-      "altText": "Gin Artesanal",
-      "title": "Gin Premium London Dry",
-      "price": "179.90",
-      "status": "IN STOCK",
-      "rating": 4.7,
-      "reviewsCount": 143,
-      "description": "Gin com botânicos selecionados e notas cítricas",
-      "images": [
-        "/src/assets/gin1.png"
-      ],
-      "category": "Gin"
     },
     {
       "id": "6",
@@ -286,19 +226,19 @@
       "category": "Gin"
     },
     {
-      "id": "20",
-      "imageUrl": "/src/assets/licor3.png",
-      "altText": "Licor de Café",
-      "title": "Licor de Café Especial",
-      "price": "79.90",
+      "id": "mc25jymif4oba",
+      "imageUrl": "data:image/jpeg;base64,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",
+      "altText": "sadasdsad",
+      "title": "adadsadasdsad",
+      "price": "150",
       "status": "IN STOCK",
-      "rating": 4.8,
-      "reviewsCount": 117,
-      "description": "Licor de café arábica com bourbon envelhecido",
+      "rating": 0,
+      "reviewsCount": 0,
+      "description": "adsdasdasdsadsa",
       "images": [
-        "/src/assets/licor3.png"
+        "data:image/jpeg;base64,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"
       ],
-      "category": "Licor"
+      "category": "Whiskey"
     }
   ],
   "orders": [
@@ -2122,6 +2062,34 @@
         "country": "Brasil"
       },
       "isFirstOrder": false
+    },
+    {
+      "id": "70ba",
+      "userId": "user_2yfGa4mvMY4b8gC1W818nB4l08b",
+      "items": [
+        {
+          "id": "1",
+          "title": "Cerveja IPA Premium",
+          "price": 25.9,
+          "imageUrl": "https://www.piramidesdistribuidora.com.br/images/original/3328-heineken-long-neck-330ml-24un.20250604092403.png",
+          "quantity": 3,
+          "category": "Cerveja"
+        }
+      ],
+      "total": 87.69999999999999,
+      "originalTotal": 87.69999999999999,
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      },
+      "isFirstOrder": false,
+      "discountApplied": 0,
+      "date": "2025-06-18T15:22:57.895Z",
+      "paymentMethod": "PIX",
+      "paymentStatus": "Concluído"
     }
   ],
   "subscribers": [
