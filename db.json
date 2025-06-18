@@ -1,0 +1,1722 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "imageUrl": "https://www.piramidesdistribuidora.com.br/images/original/3328-heineken-long-neck-330ml-24un.20250604092403.png",
+      "altText": "Cerveja Artesanal IPA",
+      "title": "Cerveja IPA Premium",
+      "price": "25.90",
+      "status": "IN STOCK",
+      "rating": 4.7,
+      "reviewsCount": 128,
+      "description": "Cerveja artesanal tipo IPA com forte aroma de lúpulo",
+      "images": [
+        "/src/assets/cerveja1.png"
+      ],
+      "category": "Cerveja"
+    },
+    {
+      "id": "2",
+      "imageUrl": "/src/assets/vinho1.png",
+      "altText": "Vinho Tinto Reserva",
+      "title": "Vinho Tinto Cabernet",
+      "price": "89.90",
+      "status": "IN STOCK",
+      "rating": 4.8,
+      "reviewsCount": 215,
+      "description": "Vinho tinto reserva com notas de frutas vermelhas",
+      "images": [
+        "/src/assets/vinho1.png"
+      ],
+      "category": "Vinho"
+    },
+    {
+      "id": "3",
+      "imageUrl": "/src/assets/whiskey1.png",
+      "altText": "Whiskey Escocês 12 anos",
+      "title": "Whiskey Single Malt",
+      "price": "299.90",
+      "status": "IN STOCK",
+      "rating": 4.9,
+      "reviewsCount": 178,
+      "description": "Whiskey escocês envelhecido 12 anos em barris de carvalho",
+      "images": [
+        "/src/assets/whiskey1.png"
+      ],
+      "category": "Whiskey"
+    },
+    {
+      "id": "4",
+      "imageUrl": "/src/assets/vodka1.png",
+      "altText": "Vodka Premium",
+      "title": "Vodka Ultra Premium",
+      "price": "149.90",
+      "status": "IN STOCK",
+      "rating": 4.6,
+      "reviewsCount": 92,
+      "description": "Vodka destilada múltiplas vezes para pureza excepcional",
+      "images": [
+        "/src/assets/vodka1.png"
+      ],
+      "category": "Vodka"
+    },
+    {
+      "id": "5",
+      "imageUrl": "/src/assets/gin1.png",
+      "altText": "Gin Artesanal",
+      "title": "Gin Premium London Dry",
+      "price": "179.90",
+      "status": "IN STOCK",
+      "rating": 4.7,
+      "reviewsCount": 143,
+      "description": "Gin com botânicos selecionados e notas cítricas",
+      "images": [
+        "/src/assets/gin1.png"
+      ],
+      "category": "Gin"
+    },
+    {
+      "id": "6",
+      "imageUrl": "/src/assets/licor1.png",
+      "altText": "Licor de Frutas",
+      "title": "Licor de Amarena",
+      "price": "69.90",
+      "status": "IN STOCK",
+      "rating": 4.5,
+      "reviewsCount": 87,
+      "description": "Licor doce de cerejas amarena italiano",
+      "images": [
+        "/src/assets/licor1.png"
+      ],
+      "category": "Licor"
+    },
+    {
+      "id": "7",
+      "imageUrl": "/src/assets/espumante1.png",
+      "altText": "Espumante Brut",
+      "title": "Espumante Brut Premium",
+      "price": "129.90",
+      "status": "IN STOCK",
+      "rating": 4.8,
+      "reviewsCount": 156,
+      "description": "Espumante brut de alta qualidade com perlage fina",
+      "images": [
+        "/src/assets/espumante1.png"
+      ],
+      "category": "Espumante"
+    },
+    {
+      "id": "8",
+      "imageUrl": "/src/assets/cerveja2.png",
+      "altText": "Cerveja Pilsen",
+      "title": "Cerveja Pilsen Premium",
+      "price": "19.90",
+      "status": "IN STOCK",
+      "rating": 4.4,
+      "reviewsCount": 204,
+      "description": "Cerveja pilsen tradicional com sabor suave",
+      "images": [
+        "/src/assets/cerveja2.png"
+      ],
+      "category": "Cerveja"
+    },
+    {
+      "id": "9",
+      "imageUrl": "/src/assets/vinho2.png",
+      "altText": "Vinho Branco Seco",
+      "title": "Vinho Branco Chardonnay",
+      "price": "79.90",
+      "status": "IN STOCK",
+      "rating": 4.6,
+      "reviewsCount": 132,
+      "description": "Vinho branco seco com notas de frutas tropicais",
+      "images": [
+        "/src/assets/vinho2.png"
+      ],
+      "category": "Vinho"
+    },
+    {
+      "id": "10",
+      "imageUrl": "/src/assets/whiskey2.png",
+      "altText": "Whiskey Bourbon",
+      "title": "Whiskey Bourbon Reserva",
+      "price": "229.90",
+      "status": "IN STOCK",
+      "rating": 4.7,
+      "reviewsCount": 98,
+      "description": "Whiskey bourbon envelhecido em barris de carvalho americano",
+      "images": [
+        "/src/assets/whiskey2.png"
+      ],
+      "category": "Whiskey"
+    },
+    {
+      "id": "11",
+      "imageUrl": "/src/assets/vodka2.png",
+      "altText": "Vodka de Limão",
+      "title": "Vodka Citron Premium",
+      "price": "159.90",
+      "status": "IN STOCK",
+      "rating": 4.5,
+      "reviewsCount": 76,
+      "description": "Vodka aromatizada com limão, perfeita para drinks",
+      "images": [
+        "/src/assets/vodka2.png"
+      ],
+      "category": "Vodka"
+    },
+    {
+      "id": "12",
+      "imageUrl": "/src/assets/gin2.png",
+      "altText": "Gin com Especiarias",
+      "title": "Gin Botânico Especial",
+      "price": "199.90",
+      "status": "IN STOCK",
+      "rating": 4.8,
+      "reviewsCount": 112,
+      "description": "Gin com blend exclusivo de especiarias e ervas",
+      "images": [
+        "/src/assets/gin2.png"
+      ],
+      "category": "Gin"
+    },
+    {
+      "id": "13",
+      "imageUrl": "/src/assets/licor2.png",
+      "altText": "Licor de Chocolate",
+      "title": "Licor de Cacau Premium",
+      "price": "89.90",
+      "status": "IN STOCK",
+      "rating": 4.9,
+      "reviewsCount": 145,
+      "description": "Licor cremoso de chocolate belga com 17% de álcool",
+      "images": [
+        "/src/assets/licor2.png"
+      ],
+      "category": "Licor"
+    },
+    {
+      "id": "14",
+      "imageUrl": "/src/assets/espumante2.png",
+      "altText": "Espumante Rosé",
+      "title": "Espumante Rosé Brut",
+      "price": "139.90",
+      "status": "IN STOCK",
+      "rating": 4.7,
+      "reviewsCount": 98,
+      "description": "Espumante rosé com delicadas bolhas e aroma frutado",
+      "images": [
+        "/src/assets/espumante2.png"
+      ],
+      "category": "Espumante"
+    },
+    {
+      "id": "15",
+      "imageUrl": "/src/assets/cerveja3.png",
+      "altText": "Cerveja Stout",
+      "title": "Cerveja Stout Artesanal",
+      "price": "29.90",
+      "status": "IN STOCK",
+      "rating": 4.6,
+      "reviewsCount": 87,
+      "description": "Cerveja escura com notas de café e chocolate",
+      "images": [
+        "/src/assets/cerveja3.png"
+      ],
+      "category": "Cerveja"
+    },
+    {
+      "id": "16",
+      "imageUrl": "/src/assets/vinho3.png",
+      "altText": "Vinho Rosé",
+      "title": "Vinho Rosé Seco",
+      "price": "69.90",
+      "status": "IN STOCK",
+      "rating": 4.4,
+      "reviewsCount": 64,
+      "description": "Vinho rosé seco com aroma fresco de frutas vermelhas",
+      "images": [
+        "/src/assets/vinho3.png"
+      ],
+      "category": "Vinho"
+    },
+    {
+      "id": "17",
+      "imageUrl": "/src/assets/whiskey3.png",
+      "altText": "Whiskey Irlandês",
+      "title": "Whiskey Triple Distilled",
+      "price": "279.90",
+      "status": "IN STOCK",
+      "rating": 4.8,
+      "reviewsCount": 102,
+      "description": "Whiskey irlandês triplamente destilado para suavidade",
+      "images": [
+        "/src/assets/whiskey3.png"
+      ],
+      "category": "Whiskey"
+    },
+    {
+      "id": "18",
+      "imageUrl": "/src/assets/vodka3.png",
+      "altText": "Vodka Russa",
+      "title": "Vodka Super Premium",
+      "price": "189.90",
+      "status": "IN STOCK",
+      "rating": 4.9,
+      "reviewsCount": 134,
+      "description": "Vodka russa filtrada a -18°C para pureza extrema",
+      "images": [
+        "/src/assets/vodka3.png"
+      ],
+      "category": "Vodka"
+    },
+    {
+      "id": "19",
+      "imageUrl": "/src/assets/gin3.png",
+      "altText": "Gin Florado",
+      "title": "Gin com Pétalas de Rosas",
+      "price": "219.90",
+      "status": "IN STOCK",
+      "rating": 4.7,
+      "reviewsCount": 89,
+      "description": "Gin com delicadas pétalas de rosas e notas florais",
+      "images": [
+        "/src/assets/gin3.png"
+      ],
+      "category": "Gin"
+    },
+    {
+      "id": "20",
+      "imageUrl": "/src/assets/licor3.png",
+      "altText": "Licor de Café",
+      "title": "Licor de Café Especial",
+      "price": "79.90",
+      "status": "IN STOCK",
+      "rating": 4.8,
+      "reviewsCount": 117,
+      "description": "Licor de café arábica com bourbon envelhecido",
+      "images": [
+        "/src/assets/licor3.png"
+      ],
+      "category": "Licor"
+    }
+  ],
+  "orders": [
+    {
+      "id": "c5ff",
+      "userId": "user_2uDk29DuoP8pNs8iSmuB5m5m7ic",
+      "items": [
+        {
+          "id": "5",
+          "title": "Sporty Fit Tee",
+          "price": 29.99,
+          "imageUrl": "srcassetsshort.png",
+          "selectedColor": "#FF0000",
+          "selectedSize": "M",
+          "quantity": 3
+        }
+      ],
+      "total": 92.97,
+      "date": "2025-03-13T19:05:32.135Z",
+      "shippingAddress": {
+        "zipCode": "",
+        "streetAddress": "",
+        "city": "",
+        "state": "",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "c424",
+      "userId": "user_2uDk29DuoP8pNs8iSmuB5m5m7ic",
+      "items": [
+        {
+          "id": "34",
+          "title": "Cream Linen Blazer",
+          "price": 190,
+          "imageUrl": "/src/assets/blazer.png",
+          "selectedColor": "#FFFDD0",
+          "selectedSize": "L",
+          "quantity": 2
+        }
+      ],
+      "total": 383,
+      "date": "2025-03-13T19:07:18.529Z",
+      "shippingAddress": {
+        "zipCode": "",
+        "streetAddress": "",
+        "city": "",
+        "state": "",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "b807",
+      "userId": "user_2uDjGU0zGcJAM1tiQtmmuBuxwWp",
+      "items": [
+        {
+          "id": "34",
+          "title": "Cream Linen Blazer",
+          "price": 190,
+          "imageUrl": "/src/assets/blazer.png",
+          "selectedColor": "#FFFDD0",
+          "selectedSize": "M",
+          "quantity": 2
+        }
+      ],
+      "total": 383,
+      "date": "2025-03-13T19:11:35.710Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "2a54",
+      "userId": "user_2uDjGU0zGcJAM1tiQtmmuBuxwWp",
+      "items": [
+        {
+          "id": "34",
+          "title": "Cream Linen Blazer",
+          "price": 190,
+          "imageUrl": "/src/assets/blazer.png",
+          "selectedColor": "#FFFDD0",
+          "selectedSize": "M",
+          "quantity": 2
+        },
+        {
+          "id": "8",
+          "title": "White Linen Blazer",
+          "price": 130,
+          "imageUrl": "srcassetsblazer.png",
+          "selectedColor": "#FFFFFF",
+          "selectedSize": "L",
+          "quantity": 2
+        }
+      ],
+      "total": 643,
+      "date": "2025-03-13T19:13:55.120Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "568d",
+      "userId": "user_2uDjGU0zGcJAM1tiQtmmuBuxwWp",
+      "items": [
+        {
+          "id": "31",
+          "title": "Relaxed Fit Tee",
+          "price": 22,
+          "imageUrl": "/src/assets/short.png",
+          "selectedColor": "#D3D3D3",
+          "selectedSize": "L",
+          "quantity": 1
+        }
+      ],
+      "total": 25,
+      "date": "2025-03-13T19:18:24.830Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "7afa",
+      "userId": "user_2uDjGU0zGcJAM1tiQtmmuBuxwWp",
+      "items": [
+        {
+          "id": "32",
+          "title": "Light Blue Denim Blazer",
+          "price": 160,
+          "imageUrl": "/src/assets/blazer.png",
+          "selectedColor": "#ADD8E6",
+          "selectedSize": "L",
+          "quantity": 2
+        }
+      ],
+      "total": 323,
+      "date": "2025-03-13T19:25:58.268Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "ead3",
+      "userId": "user_2uDjGU0zGcJAM1tiQtmmuBuxwWp",
+      "items": [
+        {
+          "id": "31",
+          "title": "Relaxed Fit Tee",
+          "price": 22,
+          "imageUrl": "/src/assets/short.png",
+          "selectedColor": "#D3D3D3",
+          "selectedSize": "M",
+          "quantity": 2
+        }
+      ],
+      "total": 47,
+      "date": "2025-03-13T19:30:15.564Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "bf0b",
+      "userId": "user_2uDjGU0zGcJAM1tiQtmmuBuxwWp",
+      "items": [
+        {
+          "id": "20",
+          "title": "Green Casual Blazer",
+          "price": 105,
+          "imageUrl": "srcassetsblazer.png",
+          "selectedColor": "#006400",
+          "selectedSize": "L",
+          "quantity": 2
+        }
+      ],
+      "total": 213,
+      "date": "2025-03-13T19:32:41.653Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "0538",
+      "userId": "user_2uDjGU0zGcJAM1tiQtmmuBuxwWp",
+      "items": [
+        {
+          "id": "34",
+          "title": "Cream Linen Blazer",
+          "price": 190,
+          "imageUrl": "/src/assets/blazer.png",
+          "selectedColor": "#FFFDD0",
+          "selectedSize": "M",
+          "quantity": 3
+        }
+      ],
+      "total": 573,
+      "date": "2025-03-13T19:33:14.986Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "4c58",
+      "userId": "user_2uDjGU0zGcJAM1tiQtmmuBuxwWp",
+      "items": [
+        {
+          "id": "34",
+          "title": "Cream Linen Blazer",
+          "price": 190,
+          "imageUrl": "/src/assets/blazer.png",
+          "selectedColor": "#FFFDD0",
+          "selectedSize": "M",
+          "quantity": 3
+        },
+        {
+          "id": "34",
+          "title": "Cream Linen Blazer",
+          "price": 190,
+          "imageUrl": "/src/assets/blazer.png",
+          "selectedColor": "#FFFDD0",
+          "selectedSize": "XL",
+          "quantity": 2
+        }
+      ],
+      "total": 953,
+      "date": "2025-03-13T19:34:06.107Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "c60a",
+      "userId": "user_2uJA9B9tA2FiCBNHPEGD952zCs7",
+      "items": [
+        {
+          "id": "26",
+          "title": "Checkered Business Blazer",
+          "price": 175,
+          "imageUrl": "srcassetsblazer.png",
+          "selectedColor": "#2F4F4F",
+          "selectedSize": "L",
+          "quantity": 4
+        }
+      ],
+      "total": 703,
+      "date": "2025-03-14T18:40:53.996Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "2db9",
+      "userId": "user_2uJA9B9tA2FiCBNHPEGD952zCs7",
+      "items": [
+        {
+          "id": "31",
+          "title": "Relaxed Fit Tee",
+          "price": 22,
+          "imageUrl": "/src/assets/short.png",
+          "selectedColor": "#D3D3D3",
+          "selectedSize": "M",
+          "quantity": 2
+        },
+        {
+          "id": "22",
+          "title": "Navy Double-Breasted Blazer",
+          "price": 180,
+          "imageUrl": "srcassetsblazer.png",
+          "selectedColor": "#000080",
+          "selectedSize": "L",
+          "quantity": 2
+        }
+      ],
+      "total": 407,
+      "date": "2025-03-14T20:05:45.439Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "e80a",
+      "userId": "user_2uJA9B9tA2FiCBNHPEGD952zCs7",
+      "items": [
+        {
+          "id": "31",
+          "title": "Relaxed Fit Tee",
+          "price": 22,
+          "imageUrl": "/src/assets/short.png",
+          "selectedColor": "#D3D3D3",
+          "selectedSize": "M",
+          "quantity": 2
+        },
+        {
+          "id": "22",
+          "title": "Navy Double-Breasted Blazer",
+          "price": 180,
+          "imageUrl": "srcassetsblazer.png",
+          "selectedColor": "#000080",
+          "selectedSize": "L",
+          "quantity": 2
+        }
+      ],
+      "total": 407,
+      "date": "2025-03-14T20:08:25.069Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "2002",
+      "userId": "user_2uJA9B9tA2FiCBNHPEGD952zCs7",
+      "items": [
+        {
+          "id": "31",
+          "title": "Relaxed Fit Tee",
+          "price": 22,
+          "imageUrl": "/src/assets/short.png",
+          "selectedColor": "#D3D3D3",
+          "selectedSize": "M",
+          "quantity": 2
+        },
+        {
+          "id": "22",
+          "title": "Navy Double-Breasted Blazer",
+          "price": 180,
+          "imageUrl": "srcassetsblazer.png",
+          "selectedColor": "#000080",
+          "selectedSize": "L",
+          "quantity": 2
+        }
+      ],
+      "total": 407,
+      "date": "2025-03-14T20:08:49.174Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "736e",
+      "userId": "user_2uDjGU0zGcJAM1tiQtmmuBuxwWp",
+      "items": [
+        {
+          "id": "2",
+          "title": "Summer Breeze Tee",
+          "price": 22,
+          "imageUrl": "srcassetsshort.png",
+          "selectedColor": "#FFFFFF",
+          "selectedSize": "M",
+          "quantity": 2
+        },
+        {
+          "id": "2",
+          "title": "Summer Breeze Tee",
+          "price": 22,
+          "imageUrl": "srcassetsshort.png",
+          "selectedColor": "#FFFFFF",
+          "selectedSize": "S",
+          "quantity": 2
+        }
+      ],
+      "total": 91,
+      "date": "2025-03-15T11:35:48.468Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "318b",
+      "userId": "user_2uDjGU0zGcJAM1tiQtmmuBuxwWp",
+      "items": [
+        {
+          "id": "2",
+          "title": "Summer Breeze Tee",
+          "price": 22,
+          "imageUrl": "srcassetsshort.png",
+          "selectedColor": "#FFCCCB",
+          "selectedSize": "M",
+          "quantity": 1
+        }
+      ],
+      "total": 25,
+      "date": "2025-03-16T05:59:55.706Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "1b6a",
+      "userId": "user_2uDjGU0zGcJAM1tiQtmmuBuxwWp",
+      "items": [
+        {
+          "id": "2",
+          "title": "Summer Breeze Tee",
+          "price": 22,
+          "imageUrl": "srcassetsshort.png",
+          "selectedColor": "#FFCCCB",
+          "selectedSize": "M",
+          "quantity": 1
+        },
+        {
+          "id": "3",
+          "title": "Formal Black Blazer",
+          "price": 120,
+          "imageUrl": "srcassetsblazer.png",
+          "selectedColor": "#000000",
+          "selectedSize": "XL",
+          "quantity": 2
+        }
+      ],
+      "total": 265,
+      "date": "2025-03-16T06:04:24.684Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "4717",
+      "userId": "user_2uDjGU0zGcJAM1tiQtmmuBuxwWp",
+      "items": [
+        {
+          "id": "2",
+          "title": "Summer Breeze Tee",
+          "price": 22,
+          "imageUrl": "srcassetsshort.png",
+          "selectedColor": "#FFCCCB",
+          "selectedSize": "M",
+          "quantity": 2
+        }
+      ],
+      "total": 47,
+      "date": "2025-03-16T06:08:03.296Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "1116",
+      "userId": "user_2uDjGU0zGcJAM1tiQtmmuBuxwWp",
+      "items": [
+        {
+          "id": "2",
+          "title": "Summer Breeze Tee",
+          "price": 22,
+          "imageUrl": "srcassetsshort.png",
+          "selectedColor": "#FFCCCB",
+          "selectedSize": "M",
+          "quantity": 2
+        }
+      ],
+      "total": 47,
+      "date": "2025-03-17T16:43:12.630Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua princesa isabel 279",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "3da9",
+      "userId": "user_2uDjGU0zGcJAM1tiQtmmuBuxwWp",
+      "items": [
+        {
+          "id": "2",
+          "title": "Summer Breeze Tee",
+          "price": 22,
+          "imageUrl": "srcassetsshort.png",
+          "selectedColor": "#FFCCCB",
+          "selectedSize": "M",
+          "quantity": 2
+        }
+      ],
+      "total": 47,
+      "date": "2025-03-17T17:48:35.063Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "785e",
+      "userId": "user_2uDjGU0zGcJAM1tiQtmmuBuxwWp",
+      "items": [
+        {
+          "id": "8",
+          "title": "White Linen Blazer",
+          "price": 130,
+          "imageUrl": "srcassetsblazer.png",
+          "selectedColor": "#FFFFFF",
+          "selectedSize": "L",
+          "quantity": 1
+        }
+      ],
+      "total": 133,
+      "date": "2025-03-17T17:49:40.163Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "ee34",
+      "userId": "user_2uDjGU0zGcJAM1tiQtmmuBuxwWp",
+      "items": [
+        {
+          "id": "5",
+          "title": "Sporty Fit Tee",
+          "price": 29.99,
+          "imageUrl": "srcassetsshort.png",
+          "selectedColor": "#FF0000",
+          "selectedSize": "M",
+          "quantity": 2
+        }
+      ],
+      "total": 62.98,
+      "date": "2025-03-17T17:52:00.553Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "8cbe",
+      "userId": "user_2uDjGU0zGcJAM1tiQtmmuBuxwWp",
+      "items": [
+        {
+          "id": "2",
+          "title": "Summer Breeze Tee",
+          "price": 22,
+          "imageUrl": "srcassetsshort.png",
+          "selectedColor": "#FFCCCB",
+          "selectedSize": "M",
+          "quantity": 3
+        }
+      ],
+      "total": 69,
+      "date": "2025-03-17T17:55:46.927Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "2012",
+      "userId": "user_2uDjGU0zGcJAM1tiQtmmuBuxwWp",
+      "items": [
+        {
+          "id": "6",
+          "title": "Blue Executive Blazer",
+          "price": 150,
+          "imageUrl": "/src/assets/camisa9.png",
+          "selectedColor": "#0000FF",
+          "selectedSize": "XL",
+          "quantity": 2
+        }
+      ],
+      "total": 303,
+      "date": "2025-03-18T04:25:03.294Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "2f43",
+      "userId": "user_2uDjGU0zGcJAM1tiQtmmuBuxwWp",
+      "items": [
+        {
+          "id": "17",
+          "title": "Tie Dye Tee",
+          "price": 24,
+          "imageUrl": "/src/assets/camisa5.png",
+          "selectedColor": "#FF7F50",
+          "selectedSize": "M",
+          "quantity": 3
+        }
+      ],
+      "total": 75,
+      "date": "2025-03-18T04:28:02.584Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "faf3",
+      "userId": "user_2uDjGU0zGcJAM1tiQtmmuBuxwWp",
+      "items": [
+        {
+          "id": "7",
+          "title": "Urban Street Tee",
+          "price": 25,
+          "imageUrl": "/src/assets/camisa1.png",
+          "selectedColor": "#A52A2A",
+          "selectedSize": "M",
+          "quantity": 2
+        }
+      ],
+      "total": 53,
+      "date": "2025-03-18T04:30:05.646Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "5e62",
+      "userId": "user_2uDjGU0zGcJAM1tiQtmmuBuxwWp",
+      "items": [
+        {
+          "id": "2",
+          "title": "Summer Breeze Tee",
+          "price": 22,
+          "imageUrl": "/src/assets/camisa7.png",
+          "selectedColor": "#FFCCCB",
+          "selectedSize": "M",
+          "quantity": 2
+        }
+      ],
+      "total": 47,
+      "date": "2025-03-18T13:08:21.617Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "92e5",
+      "userId": "user_2uDjGU0zGcJAM1tiQtmmuBuxwWp",
+      "items": [
+        {
+          "id": "15",
+          "title": "Longline Tee",
+          "price": 26,
+          "imageUrl": "/src/assets/camisa8.png",
+          "selectedColor": "#696969",
+          "selectedSize": "M",
+          "quantity": 2
+        }
+      ],
+      "total": 55,
+      "date": "2025-03-18T16:42:57.091Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "e74a",
+      "userId": "user_2uDjGU0zGcJAM1tiQtmmuBuxwWp",
+      "items": [
+        {
+          "id": "2",
+          "title": "Summer Breeze Tee",
+          "price": 22,
+          "imageUrl": "/src/assets/camisa7.png",
+          "selectedColor": "#FFCCCB",
+          "selectedSize": "M",
+          "quantity": 2
+        }
+      ],
+      "total": 47,
+      "date": "2025-03-18T18:21:42.423Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "382b",
+      "userId": "user_2uDjGU0zGcJAM1tiQtmmuBuxwWp",
+      "items": [
+        {
+          "id": "2",
+          "title": "Summer Breeze Tee",
+          "price": 22,
+          "imageUrl": "/src/assets/camisa7.png",
+          "selectedColor": "#FFFFFF",
+          "selectedSize": "M",
+          "quantity": 3
+        }
+      ],
+      "total": 69,
+      "date": "2025-03-20T06:01:42.522Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "1a4f",
+      "userId": "user_2uaEnDewEl2KpzgjP0e1bWDX8qa",
+      "items": [
+        {
+          "id": "2",
+          "title": "Summer Breeze Tee",
+          "price": 22,
+          "imageUrl": "/src/assets/camisa7.png",
+          "selectedColor": "#FFCCCB",
+          "selectedSize": "M",
+          "quantity": 1
+        }
+      ],
+      "total": 32,
+      "date": "2025-03-20T14:12:29.872Z",
+      "shippingAddress": {
+        "zipCode": "99900000",
+        "streetAddress": "ads",
+        "city": "Getúlio Vargas",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "547f",
+      "userId": "user_2uaEnDewEl2KpzgjP0e1bWDX8qa",
+      "items": [
+        {
+          "id": "2",
+          "title": "Summer Breeze Tee",
+          "price": 22,
+          "imageUrl": "/src/assets/camisa7.png",
+          "selectedColor": "#FFFFFF",
+          "selectedSize": "M",
+          "quantity": 2
+        }
+      ],
+      "total": 54,
+      "date": "2025-03-20T14:13:49.059Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "7e3a",
+      "userId": "user_2uaXm2B5yDtr3B6Q8nmBMWNoQ0c",
+      "items": [
+        {
+          "id": "1",
+          "title": "SFFDS",
+          "price": "599",
+          "imageUrl": "https://cdn.sistemawbuy.com.br/arquivos/13ef42c661356c967c0cee1859873499/produtos/65a9930f70caf/preta-frente-65de22e549c56.jpg",
+          "selectedColor": "#FFFFFF",
+          "selectedSize": "L",
+          "quantity": 1
+        }
+      ],
+      "total": 599,
+      "date": "2025-03-20T20:52:22.724Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "f90b",
+      "userId": "user_2uDjGU0zGcJAM1tiQtmmuBuxwWp",
+      "items": [
+        {
+          "id": "1",
+          "title": "SFFDS",
+          "price": "599",
+          "imageUrl": "https://cdn.sistemawbuy.com.br/arquivos/13ef42c661356c967c0cee1859873499/produtos/65a9930f70caf/preta-frente-65de22e549c56.jpg",
+          "selectedColor": "#FFFFFF",
+          "selectedSize": "M",
+          "quantity": 2
+        }
+      ],
+      "total": 1198,
+      "date": "2025-03-20T20:56:27.578Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "acf0",
+      "userId": "user_2uaXm2B5yDtr3B6Q8nmBMWNoQ0c",
+      "items": [
+        {
+          "id": "51e2",
+          "title": "agora sim",
+          "price": "500",
+          "imageUrl": "https://cdn.sistemawbuy.com.br/arquivos/13ef42c661356c967c0cee1859873499/produtos/65a9930f70caf/preta-frente-65de22e549c56.jpg",
+          "selectedColor": "#FFFFFF",
+          "selectedSize": "M",
+          "quantity": 3
+        }
+      ],
+      "total": 1500,
+      "date": "2025-03-21T03:30:21.866Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "d2df",
+      "userId": "user_2uaXm2B5yDtr3B6Q8nmBMWNoQ0c",
+      "items": [
+        {
+          "id": "1",
+          "title": "HG",
+          "price": "100.90",
+          "imageUrl": "/src/assets/camisa1.png",
+          "selectedColor": "#4c2a6d",
+          "selectedSize": "M",
+          "quantity": 3
+        }
+      ],
+      "total": 302.70000000000005,
+      "date": "2025-03-21T04:47:27.606Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "e7a1",
+      "userId": "user_2uDjGU0zGcJAM1tiQtmmuBuxwWp",
+      "items": [
+        {
+          "id": "2",
+          "title": "Summer Breeze Tee",
+          "price": 22,
+          "imageUrl": "/src/assets/camisa7.png",
+          "selectedColor": "#FFCCCB",
+          "selectedSize": "M",
+          "quantity": 5
+        }
+      ],
+      "total": 110,
+      "date": "2025-03-21T05:08:44.985Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "bebe",
+      "userId": "user_2uDjGU0zGcJAM1tiQtmmuBuxwWp",
+      "items": [
+        {
+          "id": "2",
+          "title": "Summer Breeze Tee",
+          "price": 22,
+          "imageUrl": "/src/assets/camisa7.png",
+          "selectedColor": "#FFCCCB",
+          "selectedSize": "M",
+          "quantity": 2
+        }
+      ],
+      "total": 54,
+      "date": "2025-03-21T06:00:50.931Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "35f1",
+      "userId": "user_2uaXm2B5yDtr3B6Q8nmBMWNoQ0c",
+      "items": [
+        {
+          "id": "5616",
+          "title": "Camisa polo",
+          "price": "100",
+          "imageUrl": "/src/assets/camisa1.png",
+          "selectedColor": "#1fa41f",
+          "selectedSize": "X",
+          "quantity": 2
+        }
+      ],
+      "total": 200,
+      "date": "2025-03-21T11:18:09.569Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "3382",
+      "userId": "user_2uaXm2B5yDtr3B6Q8nmBMWNoQ0c",
+      "items": [
+        {
+          "id": "1",
+          "title": "HG",
+          "price": "150",
+          "imageUrl": "/src/assets/camisa1.png",
+          "selectedColor": "#4c2a6d",
+          "selectedSize": "M",
+          "quantity": 2
+        },
+        {
+          "id": "14",
+          "title": "Brown Business Blazer",
+          "price": 110,
+          "imageUrl": "/src/assets/camisa7.png",
+          "selectedColor": "#A52A2A",
+          "selectedSize": "L",
+          "quantity": 1
+        }
+      ],
+      "total": 410,
+      "date": "2025-03-21T12:44:30.037Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "785b",
+      "userId": "user_2uaXm2B5yDtr3B6Q8nmBMWNoQ0c",
+      "items": [
+        {
+          "id": "2",
+          "title": "Summer Breeze Tee",
+          "price": "44",
+          "imageUrl": "/src/assets/camisa7.png",
+          "selectedColor": "#FFCCCB",
+          "selectedSize": "M",
+          "quantity": 1
+        }
+      ],
+      "total": 54,
+      "date": "2025-03-21T13:53:24.540Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "f768",
+      "userId": "user_2uaXm2B5yDtr3B6Q8nmBMWNoQ0c",
+      "items": [
+        {
+          "id": "2",
+          "title": "Summer Breeze Tee",
+          "price": "44",
+          "imageUrl": "/src/assets/camisa7.png",
+          "selectedColor": "#FFCCCB",
+          "selectedSize": "M",
+          "quantity": 2
+        }
+      ],
+      "total": 98,
+      "date": "2025-03-21T14:29:35.322Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "c757",
+      "userId": "user_2uaXm2B5yDtr3B6Q8nmBMWNoQ0c",
+      "items": [
+        {
+          "id": "2",
+          "title": "Summer Breeze Tee",
+          "price": "44",
+          "imageUrl": "/src/assets/camisa7.png",
+          "selectedColor": "#FFCCCB",
+          "selectedSize": "M",
+          "quantity": 2
+        }
+      ],
+      "total": 98,
+      "date": "2025-03-21T14:30:00.212Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "750b",
+      "userId": "user_2uaXm2B5yDtr3B6Q8nmBMWNoQ0c",
+      "items": [
+        {
+          "id": "2",
+          "title": "Summer Breeze Tee",
+          "price": "44",
+          "imageUrl": "/src/assets/camisa7.png",
+          "selectedColor": "#FFCCCB",
+          "selectedSize": "M",
+          "quantity": 2
+        }
+      ],
+      "total": 98,
+      "date": "2025-03-21T14:31:06.508Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "df9d",
+      "userId": "user_2uaXm2B5yDtr3B6Q8nmBMWNoQ0c",
+      "items": [
+        {
+          "id": "1",
+          "title": "HG",
+          "price": "2500",
+          "imageUrl": "/src/assets/camisa1.png",
+          "selectedColor": "#9a1616",
+          "selectedSize": "M",
+          "quantity": 2
+        }
+      ],
+      "total": 5000,
+      "date": "2025-03-21T14:31:45.815Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "f185",
+      "userId": "user_2uaXm2B5yDtr3B6Q8nmBMWNoQ0c",
+      "items": [
+        {
+          "id": "2",
+          "title": "Summer Breeze Tee",
+          "price": "44",
+          "imageUrl": "/src/assets/camisa7.png",
+          "selectedColor": "#FFCCCB",
+          "selectedSize": "M",
+          "quantity": 2
+        }
+      ],
+      "total": 98,
+      "date": "2025-03-21T14:35:27.044Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "19f3",
+      "userId": "user_2uaXm2B5yDtr3B6Q8nmBMWNoQ0c",
+      "items": [
+        {
+          "id": "1",
+          "title": "HG",
+          "price": "2500",
+          "imageUrl": "/src/assets/camisa1.png",
+          "selectedColor": "#9a1616",
+          "selectedSize": "M",
+          "quantity": 2
+        }
+      ],
+      "total": 5000,
+      "date": "2025-03-21T16:01:30.170Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "00e8",
+      "userId": "user_2uDjGU0zGcJAM1tiQtmmuBuxwWp",
+      "items": [
+        {
+          "id": "22",
+          "title": "Navy Double-Breasted Blazer",
+          "price": 180,
+          "imageUrl": "./src/assets/camisa9.png",
+          "selectedColor": "#000080",
+          "selectedSize": "L",
+          "quantity": 5
+        }
+      ],
+      "total": 900,
+      "date": "2025-03-21T16:30:57.634Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "57ff",
+      "userId": "user_2vH2IMsCeEgdSuA4DycewSoleZF",
+      "items": [
+        {
+          "id": "1",
+          "title": "Cerveja IPA Premium",
+          "price": 25.9,
+          "imageUrl": "/src/assets/cerveja1.png",
+          "quantity": 4,
+          "category": "Cerveja"
+        },
+        {
+          "id": "2",
+          "title": "Vinho Tinto Cabernet",
+          "price": 89.9,
+          "imageUrl": "/src/assets/vinho1.png",
+          "quantity": 1,
+          "category": "Vinho"
+        }
+      ],
+      "total": 193.5,
+      "date": "2025-06-17T04:17:05.902Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "4a31",
+      "userId": "user_2ycWwRbSsyhWpoQCLAiEdrwBpGT",
+      "items": [
+        {
+          "id": "1",
+          "title": "Cerveja IPA Premium",
+          "price": 25.9,
+          "imageUrl": "/src/assets/cerveja1.png",
+          "quantity": 1,
+          "category": "Cerveja"
+        }
+      ],
+      "total": 35.9,
+      "date": "2025-06-17T04:56:28.015Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "c898",
+      "userId": "user_2vH2IMsCeEgdSuA4DycewSoleZF",
+      "items": [
+        {
+          "id": "1",
+          "title": "Cerveja IPA Premium",
+          "price": 25.9,
+          "imageUrl": "/src/assets/cerveja1.png",
+          "quantity": 2,
+          "category": "Cerveja"
+        }
+      ],
+      "total": 61.8,
+      "date": "2025-06-17T16:19:19.853Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "a3f5",
+      "userId": "user_2vH2IMsCeEgdSuA4DycewSoleZF",
+      "items": [
+        {
+          "id": "1",
+          "title": "Cerveja IPA Premium",
+          "price": 25.9,
+          "imageUrl": "/src/assets/cerveja1.png",
+          "quantity": 11,
+          "category": "Cerveja"
+        }
+      ],
+      "total": 294.9,
+      "date": "2025-06-18T00:03:23.798Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    },
+    {
+      "id": "ec5e",
+      "userId": "user_2yeskFNanfjuzgb4HzJVUzBQQbl",
+      "items": [
+        {
+          "id": "1",
+          "title": "Cerveja IPA Premium",
+          "price": 25.9,
+          "imageUrl": "https://www.piramidesdistribuidora.com.br/images/original/3328-heineken-long-neck-330ml-24un.20250604092403.png",
+          "quantity": 1,
+          "category": "Cerveja"
+        }
+      ],
+      "subtotal": 25.9,
+      "discount": 6.475,
+      "total": 19.424999999999997,
+      "date": "2025-06-18T00:39:30.414Z",
+      "isFirstOrder": true,
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      }
+    }
+  ],
+  "subscribers": [
+    {
+      "id": "7085",
+      "email": "vanley_basso@hotmail.com"
+    },
+    {
+      "id": "bd71",
+      "email": "ladiversiteoficial@gmail.com"
+    },
+    {
+      "id": "c1ba",
+      "email": "bassovanley@gmail.com"
+    },
+    {
+      "id": "40e1",
+      "email": "augustocarlos@gmail.com"
+    },
+    {
+      "id": "a77f",
+      "email": "fernandotorrees@gmail.com"
+    },
+    {
+      "id": "bcee",
+      "email": "van@hotmail.com"
+    },
+    {
+      "id": "5048",
+      "email": "van@gmail.com"
+    },
+    {
+      "id": "9b09",
+      "email": "vanley_basso@hotmail.com"
+    },
+    {
+      "id": "5c22",
+      "email": "vanley_basso@hotmail.com"
+    },
+    {
+      "id": "2191",
+      "email": "carlos@gmail.com"
+    },
+    {
+      "id": "2f7e",
+      "email": "vanley_basso@hotmail.com"
+    },
+    {
+      "id": "7c4b",
+      "email": "jacan@gmail.com"
+    },
+    {
+      "id": "9607",
+      "email": "carlos@gmail.com"
+    },
+    {
+      "id": "c610",
+      "email": "vanle@gmail.com"
+    },
+    {
+      "id": "8ab3",
+      "email": "sadadas@hotmail.com"
+    },
+    {
+      "id": "5ad5",
+      "email": "ADSAD@GMAIL.COM"
+    }
+  ]
+}

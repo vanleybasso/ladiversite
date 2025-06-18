@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #FFF7ED;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Cores personalizadas */
+.bg-bordeaux {
+  background-color: #5E0B15;
+}
+
+.bg-bordeaux-dark {
+  background-color: #3A050C;
+}
+
+.text-bordeaux {
+  color: #5E0B15;
+}
+
+.bg-amber-50 {
+  background-color: #FFF7ED;
+}
+
+/* Estilos para modo escuro */
+.dark {
+  background-color: #1A1A1A;
+  color: #E2E8F0;
+}
+
+.dark .bg-bordeaux {
+  background-color: #3A050C;
+}
+
+.dark .text-bordeaux {
+  color: #D4A59A;
+}
+
+/* Estilização de inputs */
+input[type="checkbox"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #5E0B15;
+  border-color: #5E0B15;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  background: white;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: translate(-50%, -50%);
+}
+
+.dark input[type="checkbox"] {
+  border-color: #4a5568;
+  background-color: transparent;
+}
+
+.dark input[type="checkbox"]:checked {
+  background-color: #5E0B15;
+  border-color: #5E0B15;
+}
+
+.dark input[type="checkbox"]:checked::after {
+  background: white;
+}
+
+/* Estilização de range slider */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  background: #E6E7E8;
+  border-radius: 5px;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #5E0B15;
+  border: 2px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #5E0B15;
+  border: 2px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dark input[type="range"]::-webkit-slider-thumb {
+  background: #D4A59A;
+  border: 2px solid #5E0B15;
+}
+
+.dark input[type="range"]::-moz-range-thumb {
+  background: #D4A59A;
+  border: 2px solid #5E0B15;
+}
+
+/* Estilização de inputs number */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Transições suaves para links */
+.nav-link {
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #5E0B15;
+}
+
+.dark .nav-link:hover {
+  color: #D4A59A;
+}
+
+.search-input:focus {
+  outline: 2px solid #5E0B15;
+}
+
+.dark .search-input:focus {
+  outline: 2px solid #D4A59A;
+}
