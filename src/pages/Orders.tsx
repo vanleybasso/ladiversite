@@ -17,6 +17,7 @@ interface Order {
     imageUrl: string;
   }[];
   total: number;
+  originalTotal: number;
   date: string;
   shippingAddress: {
     zipCode: string;
@@ -25,6 +26,8 @@ interface Order {
     state: string;
     country: string;
   };
+  isFirstOrder: boolean;
+  discountApplied: number;
 }
 
 const Orders: React.FC = () => {
@@ -222,8 +225,17 @@ const Orders: React.FC = () => {
                         <p className={`${isDarkMode ? "text-amber-200" : "text-gray-700"}`} style={{ fontSize: "12px" }}>
                           Pedido em: {new Date(order.date).toLocaleDateString('pt-BR')}
                         </p>
+                        {order.isFirstOrder && (
+                          <p className={`${isDarkMode ? "text-green-300" : "text-green-600"}`} style={{ fontSize: "12px" }}>
+                            Desconto de primeira compra: -R${order.discountApplied.toFixed(2)}
+                          </p>
+                        )}
                         <p className={`${isDarkMode ? "text-amber-100" : "text-bordeaux"}`} style={{ fontSize: "12px" }}>
-                          Total: R${order.total.toFixed(2)}
+                          Total: R${order.total.toFixed(2)}{order.isFirstOrder && (
+                            <span className={`${isDarkMode ? "text-amber-200 line-through" : "text-gray-500 line-through"}`} style={{ marginLeft: "8px" }}>
+                              R${order.originalTotal.toFixed(2)}
+                            </span>
+                          )}
                         </p>
                       </div>
                     </div>

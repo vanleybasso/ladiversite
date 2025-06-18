@@ -18,15 +18,13 @@ const PaymentMethod: React.FC = () => {
   const [errors, setErrors] = useState<Record<string, string>>({});
 
   
-  const total = location.state?.total || 0;
+  const { order, total } = location.state || {};
 
-
-  if (!location.state?.total) {
+  if (!order || !total) {
     navigate('/checkout');
     return null;
   }
 
-  
   const pixData = {
     merchantName: "Ecommerce Exemplo",
     merchantCity: "São Paulo",
@@ -41,7 +39,6 @@ const PaymentMethod: React.FC = () => {
     const newErrors: Record<string, string> = {};
 
     if (paymentMethod === 'credit') {
-     
       const cleanedCardNumber = cardNumber.replace(/\s/g, '');
       if (!cleanedCardNumber) {
         newErrors.cardNumber = 'Número do cartão é obrigatório';
@@ -51,14 +48,12 @@ const PaymentMethod: React.FC = () => {
         newErrors.cardNumber = 'Apenas números são permitidos';
       }
 
-      
       if (!cardName.trim()) {
         newErrors.cardName = 'Nome no cartão é obrigatório';
       } else if (cardName.length < 3) {
         newErrors.cardName = 'Nome muito curto';
       }
 
-    
       const [month, year] = expiryDate.split('/');
       if (!expiryDate) {
         newErrors.expiryDate = 'Data de expiração é obrigatória';
@@ -80,7 +75,6 @@ const PaymentMethod: React.FC = () => {
         }
       }
 
-     
       if (!cvv) {
         newErrors.cvv = 'CVV é obrigatório';
       } else if (!/^\d{3}$/.test(cvv)) {
@@ -92,7 +86,7 @@ const PaymentMethod: React.FC = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handlePaymentSubmit = (e: React.FormEvent) => {
+  const handlePaymentSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     if (!validateForm()) {
@@ -101,11 +95,37 @@ const PaymentMethod: React.FC = () => {
 
     setIsProcessing(true);
     
-    
-    setTimeout(() => {
+    try {
+      
+      const saveResponse = await fetch('http://localhost:3001/orders', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...order,
+          date: new Date().toISOString(),
+          paymentMethod: paymentMethod === 'credit' ? 'Cartão de Crédito' : 'PIX',
+          paymentStatus: 'Concluído'
+        }),
+      });
+
+      if (saveResponse.ok) {
+       
+        navigate('/afterpayment', { 
+          state: { 
+            order: await saveResponse.json(),
+            paymentMethod 
+          } 
+        });
+      } else {
+        console.error('Falha ao salvar pedido');
+      }
+    } catch (error) {
+      console.error('Erro ao processar pagamento:', error);
+    } finally {
       setIsProcessing(false);
-      navigate('/afterpayment');
-    }, paymentMethod === 'pix' ? 1000 : 2000); 
+    }
   };
 
   const formatCardNumber = (value: string) => {

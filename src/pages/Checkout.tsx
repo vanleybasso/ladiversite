@@ -24,11 +24,22 @@ const Checkout: React.FC = () => {
   const [zipCodeError, setZipCodeError] = useState('');
   const [isFormValid, setIsFormValid] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [isFirstOrder, setIsFirstOrder] = useState(false);
+  const [discountApplied, setDiscountApplied] = useState(0);
 
   const shipping = subtotal >= 300 ? "Grátis" : "R$10,00";
   const shippingCost = subtotal >= 300 ? 0 : 10;
   const tax = 0;
-  const total = subtotal + shippingCost + tax;
+  const totalBeforeDiscount = subtotal + shippingCost + tax;
+  const total = isFirstOrder ? totalBeforeDiscount * 0.75 : totalBeforeDiscount;
+
+  useEffect(() => {
+    if (isFirstOrder) {
+      setDiscountApplied(totalBeforeDiscount * 0.25);
+    } else {
+      setDiscountApplied(0);
+    }
+  }, [isFirstOrder, totalBeforeDiscount]);
 
   const validateForm = () => {
     const isZipCodeValid = zipCode.length === 8 && !zipCodeError;
@@ -55,6 +66,24 @@ const Checkout: React.FC = () => {
       navigate('/login');
     }
   }, [isLoaded, isSignedIn, navigate]);
+
+  useEffect(() => {
+    const checkFirstOrder = async () => {
+      if (!user) return;
+      
+      try {
+        const response = await fetch(`http://localhost:3001/orders?userId=${user.id}`);
+        const userOrders = await response.json();
+        setIsFirstOrder(userOrders.length === 0);
+      } catch (error) {
+        console.error('Erro ao verificar pedidos:', error);
+      }
+    };
+
+    if (isLoaded && isSignedIn) {
+      checkFirstOrder();
+    }
+  }, [user, isLoaded, isSignedIn]);
 
   const fetchAddress = async (cep: string) => {
     if (cep.length === 8) {
@@ -102,26 +131,11 @@ const Checkout: React.FC = () => {
   
     setIsLoading(true);
   
-    
-    const response = await fetch(`http://localhost:3001/orders?userId=${user.id}`);
-    const userOrders = await response.json();
-    const isFirstOrder = userOrders.length === 0;
-  
-    
-    let finalTotal = total;
-    let discountApplied = 0;
-    
-    if (isFirstOrder) {
-      discountApplied = subtotal * 0.25;
-      finalTotal = total - discountApplied;
-    }
-  
     const order = {
       userId: user.id,
       items: cartItems,
-      total: finalTotal,
-      originalTotal: total,
-      date: new Date().toISOString(),
+      total: total,
+      originalTotal: totalBeforeDiscount,
       shippingAddress: {
         zipCode,
         streetAddress,
@@ -129,30 +143,20 @@ const Checkout: React.FC = () => {
         state,
         country,
       },
-      isFirstOrder
+      isFirstOrder,
+      discountApplied
     };
   
-    try {
-      const saveResponse = await fetch('http://localhost:3001/orders', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(order),
-      });
-  
-      if (saveResponse.ok) {
-        dispatch(clearCart());
-        
-        navigate('/payment', { state: { total: finalTotal } });
-      } else {
-        console.error('Falha ao salvar pedido');
-      }
-    } catch (error) {
-      console.error('Erro ao salvar pedido:', error);
-    } finally {
-      setIsLoading(false);
-    }
+    
+    dispatch(clearCart());
+    navigate('/payment', { 
+      state: { 
+        order,
+        total 
+      } 
+    });
+    
+    setIsLoading(false);
   };
 
   if (!isLoaded || !isSignedIn) {
@@ -389,6 +393,16 @@ const Checkout: React.FC = () => {
                 isDarkMode ? "text-amber-100" : "text-bordeaux"
               }`}>R${tax.toFixed(2)}</span>
             </div>
+            
+            {isFirstOrder && (
+              <div className="flex justify-between">
+                <span>Desconto (Primeira Compra)</span>
+                <span className={`font-semibold ${
+                  isDarkMode ? "text-green-300" : "text-green-600"
+                }`}>-R${discountApplied.toFixed(2)}</span>
+              </div>
+            )}
+            
             <div className={`border-t pt-4 mb-6 flex justify-between font-medium ${
               isDarkMode ? "border-amber-200 text-amber-100" : "border-bordeaux text-bordeaux"
             }`}>

@@ -2045,6 +2045,83 @@
         "country": "Brasil"
       },
       "isFirstOrder": false
+    },
+    {
+      "id": "b9ce",
+      "userId": "user_2yfGNv9V3ZIz5MU7QpijCNGFhyg",
+      "items": [
+        {
+          "id": "1",
+          "title": "Cerveja IPA Premium",
+          "price": 25.9,
+          "imageUrl": "https://www.piramidesdistribuidora.com.br/images/original/3328-heineken-long-neck-330ml-24un.20250604092403.png",
+          "quantity": 2,
+          "category": "Cerveja"
+        }
+      ],
+      "total": 46.349999999999994,
+      "originalTotal": 61.8,
+      "date": "2025-06-18T03:43:08.904Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      },
+      "isFirstOrder": true,
+      "discountApplied": 15.45
+    },
+    {
+      "id": "c51b",
+      "userId": "user_2yfGa4mvMY4b8gC1W818nB4l08b",
+      "items": [
+        {
+          "id": "1",
+          "title": "Cerveja IPA Premium",
+          "price": 25.9,
+          "imageUrl": "https://www.piramidesdistribuidora.com.br/images/original/3328-heineken-long-neck-330ml-24un.20250604092403.png",
+          "quantity": 5,
+          "category": "Cerveja"
+        }
+      ],
+      "total": 104.625,
+      "originalTotal": 139.5,
+      "date": "2025-06-18T03:44:43.891Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      },
+      "isFirstOrder": true,
+      "discountApplied": 34.875
+    },
+    {
+      "id": "8914",
+      "userId": "user_2yfGa4mvMY4b8gC1W818nB4l08b",
+      "items": [
+        {
+          "id": "1",
+          "title": "Cerveja IPA Premium",
+          "price": 25.9,
+          "imageUrl": "https://www.piramidesdistribuidora.com.br/images/original/3328-heineken-long-neck-330ml-24un.20250604092403.png",
+          "quantity": 26,
+          "category": "Cerveja"
+        }
+      ],
+      "total": 673.4,
+      "originalTotal": 673.4,
+      "date": "2025-06-18T03:45:39.598Z",
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      },
+      "isFirstOrder": false
     }
   ],
   "subscribers": [
