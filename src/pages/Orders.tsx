@@ -176,27 +176,29 @@ const Orders: React.FC = () => {
 
           <div style={{ marginTop: "20px" }}>
             {orders.length === 0 ? (
-             <div className="flex justify-center items-center flex-col mt-12 sm:mt-16 md:ml-[200px]">
-               <img
-                 src="/src/assets/Empty.png"
-                 alt="Nenhum Pedido"
-                 className={`w-16 h-16 ${isDarkMode ? "filter brightness-0 invert" : ""}`}
-               />
-               <p className={`text-sm sm:text-base mt-4 text-center ${isDarkMode ? "text-amber-200" : "text-gray-700"}`}>
-                 Seu histórico de pedidos está vazio.
-               </p>
-               <button
-                 onClick={() => navigate("/listing")}
-                 className={`bg-bordeaux text-amber-50 py-2 px-6 rounded-md hover:bg-bordeaux-dark cursor-pointer flex items-center gap-2 mt-4 hover:scale-105 transition-transform duration-200 border border-amber-200`}
-               >
-                 Comece a Comprar
-                 <img
-                   src="/src/assets/Arrow-Right.png"
-                   alt="Ícone"
-                   className="w-6 h-6 filter brightness-0 invert"
-                 />
-               </button>
-             </div>
+  <div className="flex justify-center items-center flex-col mt-12 sm:mt-16 md:ml-[200px]">
+    <img
+  src="/src/assets/wine-bottle-solid.svg"
+  alt="Nenhum Pedido"
+  className="w-16 h-16"
+  style={{ filter: "invert(13%) sepia(34%) saturate(3526%) hue-rotate(340deg) brightness(85%) contrast(100%)" }}
+/>
+
+    <p className={`text-sm sm:text-base mt-4 text-center ${isDarkMode ? "text-amber-100" : "text-bordeaux"}`}>
+      Seu histórico de pedidos está vazio.
+    </p>
+    <button
+      onClick={() => navigate("/listing")}
+      className={`bg-bordeaux text-amber-50 py-2 px-6 rounded-md hover:bg-bordeaux-dark cursor-pointer flex items-center gap-2 mt-4 hover:scale-105 transition-transform duration-200 border border-amber-200`}
+    >
+      Comece a Comprar
+      <img
+        src="/src/assets/Arrow-Right.png"
+        alt="Ícone"
+        className="w-6 h-6 filter brightness-0 invert"
+      />
+    </button>
+  </div>
             ) : (
               orders.map((order, index) => (
                 <React.Fragment key={index}>

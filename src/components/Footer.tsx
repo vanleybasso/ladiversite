@@ -21,7 +21,6 @@ const Footer = () => {
   }, [location]);
 
   useEffect(() => {
-    
     const timer = setTimeout(() => {
       if (error) setError("");
       if (success) setSuccess("");
@@ -133,10 +132,9 @@ const Footer = () => {
         </div>
       </div>
 
-     
       <div className={`${isDarkMode ? "bg-gray-900" : "bg-amber-50"} py-8`}>
         <div className="container mx-auto px-4 flex flex-col md:flex-row md:justify-between md:pl-[50px]">
-          
+
           <div>
             <div className="flex items-center cursor-pointer" onClick={handleLogoClick}>
               <img
@@ -149,18 +147,18 @@ const Footer = () => {
               </span>
             </div>
             <p className={`mt-2 text-sm ${isDarkMode ? "text-amber-100" : "text-gray-700"}`}>
-              Os melhores vinhos e destilados importados, <br /> selecionados para os paladares mais refinados.
+              Sabores do mundo, brindes únicos.
             </p>
             <div className="flex items-center gap-4 mt-6">
               <a
-                href="https://github.com"
+                href="https://wa.me/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transform transition-transform duration-300 hover:scale-110"
               >
                 <img
-                  src="/src/assets/github.png"
-                  alt="GitHub"
+                  src="/src/assets/square-whatsapp-brands.svg"
+                  alt="WhatsApp"
                   className="h-6"
                   style={{ filter: 'brightness(0) saturate(100%) invert(14%) sepia(49%) saturate(2081%) hue-rotate(337deg) brightness(89%) contrast(94%)' }}
                 />
@@ -173,7 +171,7 @@ const Footer = () => {
                 className="transform transition-transform duration-300 hover:scale-110"
               >
                 <img
-                  src="/src/assets/instagram.png"
+                  src="/src/assets/square-instagram-brands.svg"
                   alt="Instagram"
                   className="h-6"
                   style={{ filter: 'brightness(0) saturate(100%) invert(14%) sepia(49%) saturate(2081%) hue-rotate(337deg) brightness(89%) contrast(94%)' }}
@@ -181,14 +179,14 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://youtube.com"
+                href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transform transition-transform duration-300 hover:scale-110"
               >
                 <img
-                  src="/src/assets/youtube.png"
-                  alt="YouTube"
+                  src="/src/assets/square-facebook-brands.svg"
+                  alt="Facebook"
                   className="h-6"
                   style={{ filter: 'brightness(0) saturate(100%) invert(14%) sepia(49%) saturate(2081%) hue-rotate(337deg) brightness(89%) contrast(94%)' }}
                 />
@@ -196,9 +194,7 @@ const Footer = () => {
             </div>
           </div>
 
-         
           <div className="grid grid-cols-3 gap-18 mt-6 md:mt-0">
-            
             <div>
               <h3 className={`text-lg font-semibold mb-5 text-sm ${isDarkMode ? "text-amber-200" : "text-bordeaux"} hover:text-bordeaux transition-colors duration-200`}>
                 SUPORTE
@@ -231,7 +227,6 @@ const Footer = () => {
               </ul>
             </div>
 
-           
             <div>
               <h3 className={`text-lg font-semibold mb-5 text-sm ${isDarkMode ? "text-amber-200" : "text-bordeaux"} hover:text-bordeaux transition-colors duration-200`}>
                 EMPRESA
@@ -264,7 +259,6 @@ const Footer = () => {
               </ul>
             </div>
 
-           
             <div>
               <h3 className={`text-lg font-semibold mb-5 text-sm ${isDarkMode ? "text-amber-200" : "text-bordeaux"} hover:text-bordeaux transition-colors duration-200`}>
                 LOJA
@@ -298,7 +292,6 @@ const Footer = () => {
             </div>
           </div>
 
-          
           <div className="mt-6 md:mt-0">
             <h3 className={`font-semibold mb-8 text-sm ${isDarkMode ? "text-amber-200" : "text-bordeaux"}`}>
               PAGAMENTOS ACEITOS
@@ -326,7 +319,6 @@ const Footer = () => {
           </div>
         </div>
 
-        
         <div className={`text-center mt-30 mb-0 text-sm ${isDarkMode ? "text-amber-100" : "text-gray-700"}`}>
           © {currentYear} La Diversité. Todos os direitos reservados.
         </div>

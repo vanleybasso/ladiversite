@@ -140,7 +140,7 @@ const Header = () => {
             </div>
           ) : (
             <div
-              className="transform transition-transform duration-300 hover:scale-110"
+              className="transform transition-transform duration-300 hover:scale-110 cursor-pointer"
               onClick={handleUserIconClick}
             >
               <User 
