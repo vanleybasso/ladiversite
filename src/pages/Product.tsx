@@ -117,18 +117,20 @@ const Product = () => {
 
       
       <div className="flex flex-col lg:flex-row ml-4 xl:ml-32 mt-4 space-y-4 lg:space-y-0 lg:space-x-8">
-        <div className={`flex justify-center items-center relative w-full lg:w-[534px] lg:h-[574px] p-2 lg:p-4 ${isDarkMode ? "bg-gray-800" : "bg-amber-100"}`}>
-          <ImageCarousel images={product.images} altText={product.altText} />
-        </div>
+       <div className={`flex justify-center items-center relative w-full lg:w-[534px] lg:h-[574px] p-2 lg:p-4 ${isDarkMode ? "bg-gray-800" : "bg-amber-100"}`}>
+  <ImageCarousel images={product.images} altText={product.altText} />
+</div>
 
         <div className="flex flex-col justify-start p-4 lg:p-0">
           <div className="flex items-center justify-between w-full">
             <h2 className={`text-lg md:text-[24px] font-bold ${isDarkMode ? "text-amber-100" : "text-bordeaux"}`}>{product.title}</h2>
             <img
-              src="/src/assets/Share.png"
-              alt="Compartilhar"
-              className={`w-6 h-6 cursor-pointer ml-30 ${isDarkMode ? "filter brightness-0 invert" : ""}`}
-            />
+  src="/src/assets/share-nodes-solid.svg"
+  alt="Compartilhar"
+  className="w-6 h-6 cursor-pointer ml-30"
+  style={{ filter: "brightness(0) saturate(100%) invert(10%) sepia(65%) saturate(3733%) hue-rotate(338deg) brightness(92%) contrast(94%)" }}
+/>
+
           </div>
 
           <div className="flex items-center space-x-4 mt-2">
