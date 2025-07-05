@@ -2,6 +2,9 @@
 
 This project is the result of the Final Course Project (TCC) for the Technology in Systems Analysis and Development program at the Federal Institute of Education, Science and Technology of Rio Grande do Sul – Sertão Campus.
 
+![Homepage Screenshot](./public/homepage.png)
+
+
 ## 📌 Overview
 
 The system is an e-commerce platform developed for the fictitious company **La Diversité**, specialized in selling imported beverages. Its main goal is to automate the sales process, modernize customer service, and expand the brand's digital reach.
