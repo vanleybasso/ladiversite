@@ -57,13 +57,41 @@ Desenvolver uma plataforma de e-commerce para vendas online de bebidas importada
 
 Siga os passos abaixo para rodar o projeto localmente:
 
-### 1. Clone o repositório
+1. Clone this repo
+
 ```bash
 git clone https://github.com/vanleybasso/ladiversite.git
-cd ladiversite
+```
 
+2. Install the packages and dependencies using npm
 
+```bash
+npm install
+```
 
+3. Instale o JSON Server globalmente
+
+```
+npm install -g json-server
+```
+
+4. Execute o projeto, inicie o front-end
+
+```bash
+npm run dev
+```
+
+5. Inicie o back-end
+
+```bash
+npm run server
+```
+
+6. Visit the app
+
+```
+localhost:5173
+```
 
 
 
