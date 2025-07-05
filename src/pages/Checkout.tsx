@@ -65,7 +65,11 @@ const Checkout: React.FC = () => {
     if (isLoaded && !isSignedIn) {
       navigate('/login');
     }
-  }, [isLoaded, isSignedIn, navigate]);
+
+    if (cartItems.length === 0) {
+      navigate('/cart');
+    }
+  }, [isLoaded, isSignedIn, navigate, cartItems]);
 
   useEffect(() => {
     const checkFirstOrder = async () => {
@@ -147,8 +151,6 @@ const Checkout: React.FC = () => {
       discountApplied
     };
   
-    
-    dispatch(clearCart());
     navigate('/payment', { 
       state: { 
         order,

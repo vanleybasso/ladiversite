@@ -7,7 +7,7 @@ const NotFound = () => {
   const { isDarkMode } = useTheme();
   const [isLoading, setIsLoading] = useState(false);
 
-  const spirits = ['WHISKY', 'GIN', 'RUM', 'VODKA', 'TEQUILA', 'BRANDY'];
+  const spirits = ['WHISKY', 'GIN', 'VINHO', 'VODKA', 'LICOR', 'CERVEJA', 'ESPUMANTE'];
   const [currentSpirit, setCurrentSpirit] = useState(spirits[0]);
 
   const handleNavigate = () => {

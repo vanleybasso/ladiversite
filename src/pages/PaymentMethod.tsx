@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { useTheme } from '../components/ThemeContext';
 import QRCode from 'react-qr-code';
+import { useDispatch } from 'react-redux';
+import { clearCart } from '../redux/cartSlice';
 
 const PaymentMethod: React.FC = () => {
   const navigate = useNavigate();
@@ -16,14 +18,15 @@ const PaymentMethod: React.FC = () => {
   const [cvv, setCvv] = useState<string>('');
   const [isProcessing, setIsProcessing] = useState<boolean>(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
-
+  const dispatch = useDispatch();
   
   const { order, total } = location.state || {};
 
-  if (!order || !total) {
-    navigate('/checkout');
-    return null;
-  }
+  useEffect(() => {
+    if (!order || !total) {
+      navigate('/cart');
+    }
+  }, [order, total, navigate]);
 
   const pixData = {
     merchantName: "Ecommerce Exemplo",
@@ -96,7 +99,8 @@ const PaymentMethod: React.FC = () => {
     setIsProcessing(true);
     
     try {
-      
+      dispatch(clearCart());
+
       const saveResponse = await fetch('http://localhost:3001/orders', {
         method: 'POST',
         headers: {
@@ -111,12 +115,12 @@ const PaymentMethod: React.FC = () => {
       });
 
       if (saveResponse.ok) {
-       
         navigate('/afterpayment', { 
           state: { 
             order: await saveResponse.json(),
             paymentMethod 
-          } 
+          },
+          replace: true
         });
       } else {
         console.error('Falha ao salvar pedido');

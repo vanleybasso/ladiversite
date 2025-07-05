@@ -8,6 +8,44 @@ import Footer from "../components/Footer";
 import ImageCarousel from "../components/ImageCarousel";
 import { useTheme } from "../components/ThemeContext";
 
+interface Review {
+  rating: number;
+  comment: string;
+  date: string;
+  reviewerName: string;
+}
+
+interface OrderItem {
+  id: string;
+  title: string;
+  price: number;
+  quantity: number;
+  selectedColor: string;
+  selectedSize: string;
+  imageUrl: string;
+  review?: Review;
+}
+
+interface Order {
+  id: string;
+  userId: string;
+  items: OrderItem[];
+  total: number;
+  originalTotal: number;
+  date: string;
+  shippingAddress: {
+    zipCode: string;
+    streetAddress: string;
+    city: string;
+    state: string;
+    country: string;
+  };
+  isFirstOrder: boolean;
+  discountApplied: number;
+  paymentMethod: string;
+  paymentStatus: string;
+}
+
 interface Product {
   id: string;
   imageUrl: string;
@@ -29,6 +67,8 @@ const Product = () => {
   const [quantity, setQuantity] = useState<number>(1);
   const [error, setError] = useState<string | null>(null);
   const [isAddingToCart, setIsAddingToCart] = useState(false);
+  const [reviews, setReviews] = useState<Review[]>([]);
+  const [activeTab, setActiveTab] = useState<"details" | "reviews">("details");
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { isDarkMode } = useTheme();
@@ -38,7 +78,8 @@ const Product = () => {
       .then((response) => response.json())
       .then((data) => {
         setProduct(data);
-        document.title = `La Diversité - ${data.title}`; 
+        document.title = `La Diversité - ${data.title}`;
+        
         fetch("http://localhost:3001/products")
           .then((response) => response.json())
           .then((allProducts) => {
@@ -50,6 +91,23 @@ const Product = () => {
           .catch((error) =>
             console.error("Erro ao buscar produtos relacionados:", error)
           );
+          
+        fetch("http://localhost:3001/orders")
+          .then(response => response.json())
+          .then((orders: Order[]) => {
+            const allReviews: Review[] = [];
+            
+            orders.forEach(order => {
+              order.items.forEach(item => {
+                if (item.id === id && item.review) {
+                  allReviews.push(item.review);
+                }
+              });
+            });
+            
+            setReviews(allReviews);
+          })
+          .catch(error => console.error("Erro ao buscar avaliações:", error));
       })
       .catch((error) => {
         console.error("Erro ao buscar produto:", error);
@@ -102,11 +160,14 @@ const Product = () => {
     );
   }
 
+  const averageRating = reviews.length > 0 
+    ? (reviews.reduce((sum, review) => sum + review.rating, 0) / reviews.length).toFixed(1)
+    : "0.0";
+
   return (
     <div className={`${isDarkMode ? "dark bg-gray-900 text-amber-50" : "bg-amber-50 text-gray-800"}`}>
       <Header />
 
-      
       <section className="flex items-center p-2 pl-4 xl:pl-32">
         <span className={`mr-2 text-xs md:text-sm font-semibold ${isDarkMode ? "text-amber-200" : "text-bordeaux"}`}>Ecommerce</span>
         <img src="/src/assets/arrow.png" alt=">" className="w-2 h-2 mr-2" />
@@ -115,37 +176,45 @@ const Product = () => {
         </span>
       </section>
 
-      
       <div className="flex flex-col lg:flex-row ml-4 xl:ml-32 mt-4 space-y-4 lg:space-y-0 lg:space-x-8">
-       <div className={`flex justify-center items-center relative w-full lg:w-[534px] lg:h-[574px] p-2 lg:p-4 ${isDarkMode ? "bg-gray-800" : "bg-amber-100"}`}>
-  <ImageCarousel images={product.images} altText={product.altText} />
-</div>
+        <div className={`flex justify-center items-center relative w-full lg:w-[534px] lg:h-[574px] p-2 lg:p-4 ${isDarkMode ? "bg-gray-800" : "bg-amber-100"}`}>
+          <ImageCarousel images={product.images} altText={product.altText} />
+        </div>
 
         <div className="flex flex-col justify-start p-4 lg:p-0">
-          <div className="flex items-center justify-between w-full">
-            <h2 className={`text-lg md:text-[24px] font-bold ${isDarkMode ? "text-amber-100" : "text-bordeaux"}`}>{product.title}</h2>
+          {/* Título e botão compartilhar ajustados para evitar quebra ruim */}
+          <div className="flex flex-col space-y-2 sm:space-y-0 sm:flex-row sm:items-start sm:justify-between w-full">
+            <h2 className={`text-lg md:text-[24px] font-bold break-words max-w-full sm:max-w-[80%] ${isDarkMode ? "text-amber-100" : "text-bordeaux"}`}>
+              {product.title}
+            </h2>
             <img
-  src="/src/assets/share-nodes-solid.svg"
-  alt="Compartilhar"
-  className="w-6 h-6 cursor-pointer ml-30"
-  style={{ filter: "brightness(0) saturate(100%) invert(10%) sepia(65%) saturate(3733%) hue-rotate(338deg) brightness(92%) contrast(94%)" }}
-/>
-
+              src="/src/assets/share-nodes-solid.svg"
+              alt="Compartilhar"
+              className="w-6 h-6 cursor-pointer mt-2 sm:mt-0 sm:ml-4 shrink-0"
+              style={{
+                filter:
+                  "brightness(0) saturate(100%) invert(10%) sepia(65%) saturate(3733%) hue-rotate(338deg) brightness(92%) contrast(94%)",
+              }}
+            />
           </div>
 
           <div className="flex items-center space-x-4 mt-2">
             <div
-              className={`flex items-center px-3 ${isDarkMode ? "bg-gray-700" : "bg-amber-100"}`}
+              className={`flex items-center px-3 ${isDarkMode ? "bg-gray-700" : "bg-amber-100"} cursor-pointer hover:opacity-80 transition-opacity`}
               style={{
                 width: "auto",
                 height: "28px",
                 borderRadius: "100px",
                 padding: "0 12px"
               }}
+              onClick={() => {
+                setActiveTab("reviews");
+                document.getElementById("reviews-section")?.scrollIntoView({ behavior: "smooth" });
+              }}
             >
-              <img src="/src/assets/star.png" alt="Star" className="w-4 h-[15px] mr-1" />
+              <span className="text-yellow-400 text-lg mr-1">★</span>
               <span className={`text-xs whitespace-nowrap ${isDarkMode ? "text-amber-100" : "text-bordeaux"}`}>
-                {product.rating.toFixed(1)} — {product.reviewsCount} Avaliações
+                {averageRating} — {reviews.length} Avaliações
               </span>
             </div>
 
@@ -218,24 +287,128 @@ const Product = () => {
         </div>
       </div>
 
-   
       <div className="flex flex-col lg:flex-row ml-4 xl:ml-32 mt-[50px]">
-        <div className={`rounded-[8px] w-full md:w-[241px] h-[41px] flex items-center px-3 ${
-          isDarkMode ? "bg-gray-800" : "bg-amber-100"
-        }`}>
-          <img src="/src/assets/More.png" alt="Ícone" className={`w-6 h-6 mr-2 ${isDarkMode ? "filter brightness-0 invert" : ""}`} />
-          <span className={`text-sm md:text-[14px] ${isDarkMode ? "text-amber-100" : "text-bordeaux"}`}>Detalhes</span>
+        <div className="flex flex-col w-full md:w-[241px]">
+          <button
+  onClick={() => setActiveTab("details")}
+  className={`rounded-t-[8px] h-[41px] flex items-center px-3 cursor-pointer transition-transform duration-200 hover:scale-105 ${
+    isDarkMode ? "bg-gray-800" : "bg-amber-100"
+  } ${activeTab === "details" ? (isDarkMode ? "bg-gray-700" : "bg-amber-200") : ""}`}
+>
+  <img src="/src/assets/More.png" alt="Detalhes" className={`w-6 h-6 mr-2 ${isDarkMode ? "filter brightness-0 invert" : ""}`} />
+  <span className={`text-sm md:text-[14px] ${isDarkMode ? "text-amber-100" : "text-bordeaux"}`}>Detalhes</span>
+</button>
+
+<button
+  onClick={() => {
+    setActiveTab("reviews");
+    document.getElementById("reviews-section")?.scrollIntoView({ behavior: "smooth" });
+  }}
+  className={`rounded-b-[8px] h-[41px] flex items-center px-3 cursor-pointer transition-transform duration-200 hover:scale-105 ${
+    isDarkMode ? "bg-gray-800" : "bg-amber-100"
+  } ${activeTab === "reviews" ? (isDarkMode ? "bg-gray-700" : "bg-amber-200") : ""}`}
+>
+  <span className="text-yellow-400 text-lg mr-2">★</span>
+  <span className={`text-sm md:text-[14px] ${isDarkMode ? "text-amber-100" : "text-bordeaux"}`}>Avaliações</span>
+</button>
+
         </div>
 
-        <div className="mt-[16px] lg:mt-0 lg:ml-8 max-w-[727px]">
-          <h2 className={`text-base md:text-[16px] font-bold ${isDarkMode ? "text-amber-100" : "text-bordeaux"}`}>Descrição</h2>
-          <p className={`text-sm md:text-[14px] mt-2 ${isDarkMode ? "text-amber-200" : "text-gray-700"}`}>
-            {product.description}
-          </p>
+        <div className="mt-[16px] lg:mt-0 lg:ml-8 max-w-[727px] w-full" id="reviews-section">
+          {activeTab === "details" ? (
+            <>
+              <h2 className={`text-base md:text-[16px] font-bold ${isDarkMode ? "text-amber-100" : "text-bordeaux"}`}>Descrição</h2>
+              <p className={`text-sm md:text-[14px] mt-2 ${isDarkMode ? "text-amber-200" : "text-gray-700"}`}>
+                {product.description}
+              </p>
+            </>
+          ) : (
+            <>
+              <h2 className={`text-base md:text-[16px] font-bold ${isDarkMode ? "text-amber-100" : "text-bordeaux"}`}>Avaliações dos Clientes</h2>
+              
+              {reviews.length === 0 ? (
+                <p className={`text-sm md:text-[14px] mt-2 ${isDarkMode ? "text-amber-200" : "text-gray-700"}`}>
+                  Este produto ainda não possui avaliações.
+                </p>
+              ) : (
+                <>
+                  <div className="flex items-center mt-4">
+                    <div className={`text-3xl font-bold mr-4 ${isDarkMode ? "text-amber-100" : "text-bordeaux"}`}>
+                      {averageRating}
+                    </div>
+                    <div>
+                      <div className="flex">
+                        {[1, 2, 3, 4, 5].map((star) => (
+                          <span
+                            key={star}
+                            className={`text-xl ${
+                              star <= Math.round(parseFloat(averageRating)) 
+                                ? 'text-yellow-400' 
+                                : 'text-gray-400'
+                            }`}
+                          >
+                            ★
+                          </span>
+                        ))}
+                      </div>
+                      <p className={`text-sm ${isDarkMode ? "text-amber-200" : "text-gray-600"}`}>
+                        Baseado em {reviews.length} avaliações
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="mt-6 space-y-6">
+                    {reviews
+                      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+                      .map((review, index) => (
+                        <div key={index} className={`p-4 rounded-lg ${
+                          isDarkMode ? "bg-gray-800" : "bg-amber-50"
+                        }`}>
+                          <div className="flex justify-between items-start mb-2">
+                            <div>
+                              <p className={`text-sm font-semibold ${
+                                isDarkMode ? "text-amber-100" : "text-bordeaux"
+                              }`}>
+                                {review.reviewerName}
+                              </p>
+                              <div className="flex items-center mt-1">
+                                {[1, 2, 3, 4, 5].map((star) => (
+                                  <span
+                                    key={star}
+                                    className={`text-lg ${
+                                      star <= review.rating 
+                                        ? 'text-yellow-400' 
+                                        : 'text-gray-400'
+                                    }`}
+                                  >
+                                    ★
+                                  </span>
+                                ))}
+                              </div>
+                            </div>
+                            <span className={`text-xs ${
+                              isDarkMode ? "text-amber-200" : "text-gray-500"
+                            }`}>
+                              {new Date(review.date).toLocaleDateString('pt-BR')}
+                            </span>
+                          </div>
+                          {review.comment && (
+                            <p className={`text-sm mt-2 ${
+                              isDarkMode ? "text-amber-100" : "text-gray-800"
+                            }`}>
+                              {review.comment}
+                            </p>
+                          )}
+                        </div>
+                      ))}
+                  </div>
+                </>
+              )}
+            </>
+          )}
         </div>
       </div>
 
-     
       <div className="flex flex-col ml-4 xl:ml-32 mt-[200px]">
         <h2 className={`text-lg md:text-[24px] font-bold ${isDarkMode ? "text-amber-100" : "text-bordeaux"}`}>Você também pode gostar</h2>
         <p className={`text-xs md:text-[12px] ${isDarkMode ? "text-amber-200" : "text-bordeaux"}`}>
