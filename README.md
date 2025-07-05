@@ -1,61 +1,61 @@
-# 🛒 La Diversité - E-commerce de Bebidas Importadas
+# 🛒 La Diversité - Imported Beverages E-commerce
 
-Este projeto é o resultado do Trabalho de Conclusão de Curso (TCC) do curso de Tecnologia em Análise e Desenvolvimento de Sistemas do Instituto Federal do Rio Grande do Sul – Campus Sertão.
+This project is the result of the Final Course Project (TCC) for the Technology in Systems Analysis and Development program at the Federal Institute of Education, Science and Technology of Rio Grande do Sul – Sertão Campus.
 
-## 📌 Descrição
+## 📌 Overview
 
-O sistema consiste em uma plataforma de e-commerce desenvolvida para a empresa fictícia **La Diversité**, especializada na venda de bebidas importadas. O objetivo principal é automatizar o processo de vendas, modernizar o atendimento ao cliente e ampliar o alcance digital da marca.
+The system is an e-commerce platform developed for the fictitious company **La Diversité**, specialized in selling imported beverages. Its main goal is to automate the sales process, modernize customer service, and expand the brand's digital reach.
 
-A plataforma permite que os clientes:
-- Visualizem produtos em destaque,
-- Apliquem filtros por nome, categoria e preço,
-- Consultem os detalhes dos produtos,
-- Adicionem itens ao carrinho,
-- Finalizem a compra com pagamento via cartão ou PIX,
-- Consultem seu histórico de pedidos.
+The platform allows customers to:
+- View featured products,
+- Apply filters by name, category, and price,
+- See detailed product information,
+- Add items to the shopping cart,
+- Complete purchases via credit card or PIX,
+- View their order history.
 
-Além disso, há um ambiente administrativo para o gerenciamento completo do catálogo de produtos.
+Additionally, it includes an admin panel for managing the product catalog.
 
-## 🎯 Objetivos
+## 🎯 Goals
 
-### Objetivo Geral
-Desenvolver uma plataforma de e-commerce para vendas online de bebidas importadas, promovendo praticidade, escalabilidade e autonomia tanto para clientes quanto para administradores.
+### General Objective
+Develop an e-commerce platform for online sales of imported beverages, promoting practicality, scalability, and autonomy for both customers and administrators.
 
-### Objetivos Específicos
-- Criar interface responsiva e acessível;
-- Implementar cadastro e login com autenticação via Clerk;
-- Permitir gerenciamento de produtos pelo administrador;
-- Oferecer checkout com múltiplas formas de pagamento;
-- Garantir a segurança dos dados e boa usabilidade.
+### Specific Objectives
+- Build a responsive and accessible interface;
+- Implement user and admin registration with Clerk authentication;
+- Allow product management by administrators;
+- Provide checkout with multiple payment methods;
+- Ensure data security and good usability.
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Technologies Used
 
-- **Front-end:** React + TypeScript
-- **Estilização:** TailwindCSS
-- **Autenticação:** Clerk
-- **Estado Global:** Redux
-- **Banco de Dados Simulado:** JSON Server
-- **API de Endereços:** BrasilCEP
-- **Versionamento:** Git + GitHub
+- **Frontend:** React + TypeScript  
+- **Styling:** TailwindCSS  
+- **Authentication:** Clerk  
+- **Global State Management:** Redux  
+- **Mock Database:** JSON Server  
+- **Address API:** BrasilCEP  
+- **Version Control:** Git + GitHub  
 
-## 🖥️ Funcionalidades Principais
+## 🖥️ Key Features
 
-### Cliente
-- Cadastro e login (tradicional ou Google)
-- Navegação e filtro de produtos
-- Carrinho de compras
-- Checkout com endereço e método de pagamento
-- Histórico de pedidos
-- Avaliação de produtos
+### Customer
+- Sign up and log in (email/password or Google)
+- Product browsing and filtering
+- Shopping cart
+- Checkout with address input and payment selection
+- Order history
+- Product reviews
 
-### Administrador
-- Acesso restrito via role no Clerk
-- Cadastro, edição e exclusão de produtos
-- Visualização dos pedidos
+### Administrator
+- Restricted access via Clerk role
+- Product creation, editing, and deletion
+- Order overview
 
-## 📦 Instalação e Execução
+## 📦 Installation and Execution
 
-Siga os passos abaixo para rodar o projeto localmente:
+Follow the steps below to run the project locally:
 
 1. Clone this repo
 
@@ -69,19 +69,19 @@ git clone https://github.com/vanleybasso/ladiversite.git
 npm install
 ```
 
-3. Instale o JSON Server globalmente
+3. Install JSON Server globally
 
 ```
 npm install -g json-server
 ```
 
-4. Execute o projeto, inicie o front-end
+4. Run the project, start the front-end
 
 ```bash
 npm run dev
 ```
 
-5. Inicie o back-end
+5. Start the backend
 
 ```bash
 npm run server
