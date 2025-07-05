@@ -528,20 +528,54 @@
   ],
   "orders": [
     {
-      "id": "8c9b",
-      "userId": "user_2yfGa4mvMY4b8gC1W818nB4l08b",
+      "id": "bc00",
+      "userId": "user_2z9RBr8euJPs5xBP0pCFDsgbzeH",
       "items": [
         {
           "id": "6",
           "title": "Johnnie Walker Red Label 1L",
           "price": 129.9,
           "imageUrl": "https://superprix.vteximg.com.br/arquivos/ids/225941/5000267013602_99_24_1200_72_RGB.png.png?v=638763511292900000",
-          "quantity": 1,
-          "category": "Whiskey"
+          "quantity": 18,
+          "category": "Whiskey",
+          "review": {
+            "rating": 5,
+            "comment": "",
+            "date": "2025-06-28T20:47:43.193Z",
+            "reviewerName": "Carlos Augusto"
+          }
         }
       ],
-      "total": 104.92500000000001,
-      "originalTotal": 139.9,
+      "total": 2338.2000000000003,
+      "originalTotal": 2338.2000000000003,
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      },
+      "isFirstOrder": false,
+      "discountApplied": 0,
+      "date": "2025-06-28T20:47:34.400Z",
+      "paymentMethod": "PIX",
+      "paymentStatus": "Concluído"
+    },
+    {
+      "id": "df73",
+      "userId": "user_2yfGa4mvMY4b8gC1W818nB4l08b",
+      "items": [
+        {
+          "id": "2",
+          "title": "Stella Artois 275ml",
+          "price": 8.5,
+          "imageUrl": "https://rocky-v3-1fa5fca18f3119c0333e35a28671df45.s3.sa-east-1.amazonaws.com/product_images/30ddbfc9b0ec17296145ba1bc134cc8a.webp",
+          "quantity": 2,
+          "category": "Cerveja"
+        }
+      ],
+      "total": 20.25,
+      "originalTotal": 27,
       "shippingAddress": {
         "zipCode": "99050100",
         "streetAddress": "Rua Princesa Isabel",
@@ -550,8 +584,146 @@
         "country": "Brasil"
       },
       "isFirstOrder": true,
-      "discountApplied": 34.975,
-      "date": "2025-06-25T03:18:01.697Z",
+      "discountApplied": 6.75,
+      "date": "2025-06-28T20:51:42.035Z",
+      "paymentMethod": "PIX",
+      "paymentStatus": "Concluído"
+    },
+    {
+      "id": "79f8",
+      "userId": "user_2yfGa4mvMY4b8gC1W818nB4l08b",
+      "items": [
+        {
+          "id": "12",
+          "title": "Veuve Clicquot Yellow Label 750ml",
+          "price": 499.9,
+          "imageUrl": "https://divvino.vtexassets.com/arquivos/ids/160686/Champagne-Veuve-Clicquot-Ponsardin-Brut-Rose.png?v=638688256847830000",
+          "quantity": 1,
+          "category": "Vinho",
+          "review": {
+            "rating": 5,
+            "comment": "asdasdasasasdasdsadasdasdasdasdasdasdasdasdasdasdasdasdasdasdsa",
+            "date": "2025-06-28T20:52:38.065Z",
+            "reviewerName": "Vanley Basso"
+          }
+        }
+      ],
+      "total": 499.9,
+      "originalTotal": 499.9,
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      },
+      "isFirstOrder": false,
+      "discountApplied": 0,
+      "date": "2025-06-28T20:52:21.228Z",
+      "paymentMethod": "PIX",
+      "paymentStatus": "Concluído"
+    },
+    {
+      "id": "691a",
+      "userId": "user_2z9RBr8euJPs5xBP0pCFDsgbzeH",
+      "items": [
+        {
+          "id": "11",
+          "title": "Casillero del Diablo Cabernet Sauvignon 750ml",
+          "price": 89.9,
+          "imageUrl": "https://emporio4estrelas.vtexassets.com/arquivos/ids/158011/Vinho-Casillero-Del-Diablo-Merlot-750ml.png?v=636925943321730000",
+          "quantity": 1,
+          "category": "Vinho",
+          "review": {
+            "rating": 5,
+            "comment": "zcxczxczxcz",
+            "date": "2025-07-05T13:51:22.760Z",
+            "reviewerName": "Carlos Augusto BASSO"
+          }
+        }
+      ],
+      "total": 99.9,
+      "originalTotal": 99.9,
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      },
+      "isFirstOrder": false,
+      "discountApplied": 0,
+      "date": "2025-07-05T13:51:12.069Z",
+      "paymentMethod": "PIX",
+      "paymentStatus": "Concluído"
+    },
+    {
+      "id": "4c9e",
+      "userId": "user_2yfGa4mvMY4b8gC1W818nB4l08b",
+      "items": [
+        {
+          "id": "11",
+          "title": "Casillero del Diablo Cabernet Sauvignon 750ml",
+          "price": 89.9,
+          "imageUrl": "https://emporio4estrelas.vtexassets.com/arquivos/ids/158011/Vinho-Casillero-Del-Diablo-Merlot-750ml.png?v=636925943321730000",
+          "quantity": 1,
+          "category": "Vinho",
+          "review": {
+            "rating": 5,
+            "comment": "",
+            "date": "2025-07-05T14:29:25.877Z",
+            "reviewerName": "Vanley Basso"
+          }
+        },
+        {
+          "id": "13",
+          "title": "Sandeman Porto Ruby 750ml",
+          "price": 129.9,
+          "imageUrl": "/src/assets/sandemann.png",
+          "quantity": 2,
+          "category": "Vinho"
+        }
+      ],
+      "total": 349.70000000000005,
+      "originalTotal": 349.70000000000005,
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      },
+      "isFirstOrder": false,
+      "discountApplied": 0,
+      "date": "2025-07-05T14:05:07.684Z",
+      "paymentMethod": "PIX",
+      "paymentStatus": "Concluído"
+    },
+    {
+      "id": "9629",
+      "userId": "user_2yfGa4mvMY4b8gC1W818nB4l08b",
+      "items": [
+        {
+          "id": "7",
+          "title": "Jack Daniel's Old No.7 1L",
+          "price": 189.9,
+          "imageUrl": "https://trend-files-public-prod.s3.us-east-1.amazonaws.com/products/photos/2025/1/ef2b2b42-fed0-4237-903a-b4f7edca043a.png",
+          "quantity": 20,
+          "category": "Whiskey"
+        }
+      ],
+      "total": 3798,
+      "originalTotal": 3798,
+      "shippingAddress": {
+        "zipCode": "99050100",
+        "streetAddress": "Rua Princesa Isabel",
+        "city": "Passo Fundo",
+        "state": "RS",
+        "country": "Brasil"
+      },
+      "isFirstOrder": false,
+      "discountApplied": 0,
+      "date": "2025-07-05T15:55:58.397Z",
       "paymentMethod": "PIX",
       "paymentStatus": "Concluído"
     }

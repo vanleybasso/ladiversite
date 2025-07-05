@@ -110,10 +110,14 @@ const Cart: React.FC = () => {
                       />
                     </Link>
                   </div>
-                  <div className="flex-1 w-full sm:w-auto">
-                    <Link to={`/product/${item.id}`} className={`font-medium hover:underline ${
-                      isDarkMode ? "text-amber-100" : "text-bordeaux"
-                    }`}>
+                  <div className="flex-1 w-full sm:w-auto max-w-[250px]">
+                    <Link
+                      to={`/product/${item.id}`}
+                      className={`font-medium hover:underline truncate block max-w-full ${
+                        isDarkMode ? "text-amber-100" : "text-bordeaux"
+                      }`}
+                      title={item.title}
+                    >
                       {item.title}
                     </Link>
                   </div>
