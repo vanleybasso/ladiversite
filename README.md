@@ -93,6 +93,18 @@ npm run server
 localhost:5173
 ```
 
+## 👤 Author
+
+**Vanley Basso**  
+Undergraduate Student – Technology in Systems Analysis and Development  
+Federal Institute of Education, Science and Technology of Rio Grande do Sul – Campus Sertão  
+📧 [0100226@aluno.sertao.ifrs.edu.br](mailto:0100226@aluno.sertao.ifrs.edu.br)
+
+## 🎓 Advisor
+
+**Prof. Carlos Mario Dal Col Zeve**  
+Federal Institute of Education, Science and Technology of Rio Grande do Sul – Campus Sertão  
+📧 [carlos.zeve@sertao.ifrs.edu.br](mailto:carlos.zeve@sertao.ifrs.edu.br)
 
 
 
