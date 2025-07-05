@@ -98,7 +98,7 @@ localhost:5173
 **Vanley Basso**  
 Undergraduate Student – Technology in Systems Analysis and Development  
 Federal Institute of Education, Science and Technology of Rio Grande do Sul – Campus Sertão  
-📧 [0100226@aluno.sertao.ifrs.edu.br](mailto:0100226@aluno.sertao.ifrs.edu.br)
+📧 [vanley_basso@hotmail.com](mailto:vanley_basso@hotmail.com)
 
 ## 🎓 Advisor
 
@@ -106,6 +106,17 @@ Federal Institute of Education, Science and Technology of Rio Grande do Sul – 
 Federal Institute of Education, Science and Technology of Rio Grande do Sul – Campus Sertão  
 📧 [carlos.zeve@sertao.ifrs.edu.br](mailto:carlos.zeve@sertao.ifrs.edu.br)
 
+## 🙏 Acknowledgments
+
+I would like to express my sincere gratitude to everyone who contributed directly or indirectly to the development of this project. Special thanks to my advisor, Professor Carlos Mario Dal Col Zeve, for the guidance, support, and encouragement throughout the process. I also extend my appreciation to the Federal Institute of Education, Science and Technology of Rio Grande do Sul – Campus Sertão, for providing the knowledge and structure necessary for my academic and professional growth. This project marks the conclusion of an important phase in my education and reflects the dedication and learning acquired during the course.
+
+## 📬 Contact
+
+If you have any questions, suggestions, or would like to get in touch, feel free to reach out:
+
+- 📧 Email: [vanley_basso@hotmail.com](mailto:vanley_basso@hotmail.com)  
+- 💼 LinkedIn: [linkedin.com/in/vanleybasso](https://www.linkedin.com/in/vanleybasso)  
+- 🐙 GitHub: [github.com/vanleybasso](https://github.com/vanleybasso)
 
 
 
