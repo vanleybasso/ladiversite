@@ -52,3 +52,9 @@ Desenvolver uma plataforma de e-commerce para vendas online de bebidas importada
 - Acesso restrito via role no Clerk
 - Cadastro, edição e exclusão de produtos
 - Visualização dos pedidos
+
+## 📦 Instalação e Execução
+
+Siga os passos abaixo para executar o projeto localmente:
+
+
