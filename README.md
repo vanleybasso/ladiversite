@@ -7,7 +7,7 @@ This project is the result of the Final Course Project (TCC) for the Technology 
 
 ## 📌 Overview
 
-The system is an e-commerce platform developed for the fictitious company **La Diversité**, specialized in selling imported beverages. Its main goal is to automate the sales process, modernize customer service, and expand the brand's digital reach.
+The system is an e-commerce platform developed for the company **La Diversité**, specialized in selling imported beverages. Its main goal is to automate the sales process, modernize customer service, and expand the brand's digital reach.
 
 The platform allows customers to:
 - View featured products,
