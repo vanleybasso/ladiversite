@@ -24,6 +24,7 @@ const Checkout: React.FC = () => {
   const [zipCodeError, setZipCodeError] = useState('');
   const [isFormValid, setIsFormValid] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [isFetchingCEP, setIsFetchingCEP] = useState(false);
   const [isFirstOrder, setIsFirstOrder] = useState(false);
   const [discountApplied, setDiscountApplied] = useState(0);
 
@@ -42,7 +43,8 @@ const Checkout: React.FC = () => {
   }, [isFirstOrder, totalBeforeDiscount]);
 
   const validateForm = () => {
-    const isZipCodeValid = zipCode.length === 8 && !zipCodeError;
+    
+    const isZipCodeValid = zipCode.length === 8;
     const isStreetAddressValid = streetAddress.trim() !== '';
     const isCityValid = city.trim() !== '';
     const isStateValid = state.trim() !== '';
@@ -59,7 +61,7 @@ const Checkout: React.FC = () => {
 
   useEffect(() => {
     validateForm();
-  }, [zipCode, streetAddress, city, state, country, zipCodeError]);
+  }, [zipCode, streetAddress, city, state, country]); 
 
   useEffect(() => {
     if (isLoaded && !isSignedIn) {
@@ -90,36 +92,79 @@ const Checkout: React.FC = () => {
   }, [user, isLoaded, isSignedIn]);
 
   const fetchAddress = async (cep: string) => {
-    if (cep.length === 8) {
-      try {
-        const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
-        const data = await response.json();
-
-        if (!data.erro) {
-          setStreetAddress(data.logradouro);
-          setCity(data.localidade);
-          setState(data.uf);
-          setCountry('Brasil');
-          setZipCodeError('');
-        } else {
-          setStreetAddress('');
-          setCity('');
-          setState('');
-          setCountry('Brasil');
-          setZipCodeError('CEP não encontrado.');
+    setIsFetchingCEP(true);
+    setZipCodeError('');
+    
+    try {
+      
+      const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(`https://viacep.com.br/ws/${cep}/json/`)}`;
+      const proxyResponse = await fetch(proxyUrl);
+      
+      if (proxyResponse.ok) {
+        const proxyData = await proxyResponse.json();
+        if (proxyData.contents) {
+          const data = JSON.parse(proxyData.contents);
+          handleAddressData(data);
+          return;
         }
-      } catch (error) {
-        console.error('Erro ao consultar CEP:', error);
-        setZipCodeError('Erro ao consultar CEP. Tente novamente.');
       }
-    } else {
-      setStreetAddress('');
-      setCity('');
-      setState('');
-      setCountry('Brasil');
-      setZipCodeError(cep.length > 0 ? 'CEP incompleto.' : '');
+      
+     
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 3000);
+      
+      try {
+        const directResponse = await fetch(`https://viacep.com.br/ws/${cep}/json/`, {
+          signal: controller.signal
+        });
+        clearTimeout(timeoutId);
+        
+        if (directResponse.ok) {
+          const directData = await directResponse.json();
+          handleAddressData(directData);
+          return;
+        }
+        throw new Error('Resposta da API não OK');
+      } catch (directError) {
+        console.log('Conexão direta falhou:', directError);
+        throw directError;
+      }
+    } catch (error) {
+      console.error('Erro ao consultar CEP:', error);
+    
+      setZipCodeError('Não foi possível buscar o CEP automaticamente. Verifique os dados ou preencha manualmente.');
+      
+    } finally {
+      setIsFetchingCEP(false);
     }
   };
+
+  const handleAddressData = (data: any) => {
+    if (data.erro) {
+      setZipCodeError('CEP não encontrado na base de dados. Verifique ou preencha manualmente.');
+      return;
+    }
+
+    setStreetAddress(data.logradouro || '');
+    setCity(data.localidade || '');
+    setState(data.uf || '');
+    setCountry('Brasil');
+    setZipCodeError(''); 
+  };
+
+  useEffect(() => {
+    if (zipCode.length === 8) {
+      const timer = setTimeout(() => {
+        fetchAddress(zipCode);
+      }, 500); 
+      
+      return () => clearTimeout(timer);
+    } else if (zipCode.length > 0) {
+      setZipCodeError('CEP incompleto (8 dígitos necessários)');
+    } else {
+      setZipCodeError('');
+    }
+  }, [zipCode]);
 
   const handleEditCart = () => {
     navigate('/cart');
@@ -214,15 +259,24 @@ const Checkout: React.FC = () => {
                 onChange={(e) => {
                   const value = e.target.value.replace(/\D/g, '');
                   setZipCode(value);
-                  fetchAddress(value);
                 }}
                 className={`w-full h-[45px] p-2 border rounded-md ${
                   isDarkMode ? "bg-gray-800 border-amber-200 text-amber-50" : "bg-amber-50 border-bordeaux text-gray-800"
-                }`}
+                } ${zipCodeError && 'border-red-500'}`}
                 style={{ fontSize: '14px' }}
                 maxLength={8}
+                placeholder="Digite 8 dígitos"
               />
-              {zipCodeError && <p className="text-red-400 text-sm mt-1">{zipCodeError}</p>}
+              {isFetchingCEP && (
+                <div className="text-sm text-blue-500 mt-1">Buscando CEP...</div>
+              )}
+              {zipCodeError && (
+                <p className={`text-sm mt-1 ${
+                  isDarkMode ? "text-amber-200" : "text-gray-600"
+                }`}>
+                  {zipCodeError}
+                </p>
+              )}
             </div>
 
             <div className="w-full sm:w-[259px]">
